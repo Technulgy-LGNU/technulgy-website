@@ -1,0 +1,7 @@
+.react-router
+build
+node_modules
+README.md
+.gitignore
+docker-stack.yaml
+.github
