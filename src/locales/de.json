@@ -1,0 +1,12 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "partHistory": "Erfolgsgeschichte",
+    "sponsors": "Sponsoren",
+    "publications": "Veröffentlichungen"
+  },
+
+  "home": {
+    "more": "MEHR ERFAHREN"
+  }
+}

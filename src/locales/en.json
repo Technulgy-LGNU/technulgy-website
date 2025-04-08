@@ -1,0 +1,12 @@
+{
+  "nav": {
+    "home": "Home",
+    "partHistory": "Participation History",
+    "sponsors": "Sponsors",
+    "publications": "Publications"
+  },
+
+  "home": {
+    "more": "LEARN MORE"
+  }
+}
