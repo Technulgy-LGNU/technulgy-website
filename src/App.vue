@@ -3,6 +3,7 @@ import { RouterView } from 'vue-router'
 import HeaderComponent from '@/components/HeaderComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
 import { useI18n } from 'vue-i18n'
+import { onMounted, ref } from 'vue'
 
 const { locale } = useI18n()
 
@@ -18,12 +19,17 @@ if (localStorage.getItem('lang') === null) {
   }
 }
 
+const mainContent = ref<HTMLElement | null>(null)
+onMounted(() =>{
+  mainContent.value?.focus()
+})
+
 </script>
 
 <template>
   <div class="flex flex-col min-h-screen">
     <HeaderComponent />
-    <main class="flex-grow">
+    <main ref="mainContent" tabindex="-1" class="flex-grow outline-none focus:outline-none">
       <RouterView />
     </main>
     <FooterComponent />
