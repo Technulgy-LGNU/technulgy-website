@@ -1,0 +1,8 @@
+.github
+.gitignore
+.gitattributes
+content
+.idea
+.vscode
+node_modules
+.editorconfig
