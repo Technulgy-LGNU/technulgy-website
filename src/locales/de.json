@@ -36,5 +36,33 @@
     "title": "Unsere Sponsoren",
     "text": "Wir möchten uns bei unseren Sponsoren bedanken, ohne die es uns nicht möglich wäre, an den Meisterschaften teilzunehmen und unsere Roboter zu bauen.\n Wenn Sie uns unterstützen möchten, können Sie uns hier kontaktieren:",
     "button": "Unterstützen Sie uns!"
+  },
+
+  "teams": {
+    "title": "Unsere Teams",
+
+    "teamfaabs": "Gegründet in 2019 nam das Team Faabs 2020 zum ersten mal in der Liga Soccer LightWeight teil. Den ersten Erfolg hatten Sie 2022 mit dem Titel des Europäischen Vize Meisters in der Liga Soccer LightWeight. Seit 2023 sind Sie in der Liga Soccer Open und gewannen 2023 auch die Weltmeisterschaft",
+    "teamfaabs_award1": "Deutsche Meisterschaft 2025 - 1. Platz Soccer Open",
+    "teamfaabs_award2": "Deutsche Meisterschaft 2025 - Technical Challenge Soccer Open",
+    "teamfaabs_award3": "Süddeutsche Meisterschaft 2025 - 1. Platz Soccer Open",
+    "teamfaabs_award4": "Deutsche Meisterschaft 2024 - 1. Platz Soccer Open",
+    "teamfaabs_award5": "Süddeutsche Meisterschaft 2024 - 1. Platz Soccer Open",
+    "teamfaabs_award6": "Weltmeisterschaft 2023 - 1. Platz Soccer Open",
+    "teamfaabs_award7": "Weltmeisterschaft 2023 - Outstanding Design Award Soccer Open",
+    "teamfaabs_award8": "Deutsche Meisterschaft 2023 - 2. Platz Soccer Open",
+    "teamfaabs_award9": "Deutsche Meisterschaft 2023 - 1. Platz Superteam Soccer Open",
+    "teamfaabs_award10": "Süddeutsche Meisterschaft 2023 - 2. Platz Soccer Open",
+    "teamfaabs_award11": "Europäische Meisterschaft 2022 - 2. Platz Soccer LightWeight",
+    "teamfaabs_award12": "Deutsche Meisterschaft 2022 - 2. Platz Soccer LightWeight",
+
+    "mathimazierer": "Gegründet in 2022 nahm das Team Mathimazierer 2023 zum ersten Mal in der Liga Soccer LightWeight Entry teil, wo sie den Titel des Vize-Europameisters erhielten. 2024 wechselten sie in die Liga Soccer LightWeight und erhielten ihren zweiten Vize-Europameistertitel.",
+    "mathimazierer_award1": "Deutsche Meisterschaft 2025 - 1. Platz Soccer Lightweight",
+    "mathimazierer_award2": "Süddeutsche Meisterschaft 2025 - 1. Platz Soccer Lightweight",
+    "mathimazierer_award3": "Europäische Meisterschaft 2024 - 2. Platz Soccer Lightweight",
+    "mathimazierer_award4": "Deutsche Meisterschaft 2024 - 3. Platz Soccer Lightweight",
+    "mathimazierer_award5": "Süddeutsche Meisterschaft 2024 - 3. Platz Soccer Lightweight",
+    "mathimazierer_award6": "Europäische Meisterschaft 2023 - 2. Platz Soccer Lightweight Entry",
+    "mathimazierer_award7": "Deutsche Meisterschaft 2023 - 3. Platz Soccer Lightweight Entry",
+    "mathimazierer_award8": "Süddeutsche Meisterschaft 2023 - 2. Platz Soccer Lightweight Entry"
   }
 }
