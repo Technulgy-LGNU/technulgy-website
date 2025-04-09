@@ -23,27 +23,40 @@ const links = [
     icon: YouTubeIcon
   },
   {
+    name: 'SoccerXY YouTube',
+    url: 'https://www.youtube.com/@soccerxy',
+    icon: YouTubeIcon
+  },
+  {
+    name: 'iBots YouTube',
+    url: 'https://www.youtube.com/@ibotsgermany',
+    icon: YouTubeIcon
+  },
+  {
     name: 'Instagram Team Faabs',
-    url: 'https://instagram.com/yourhandle',
+    url: 'https://www.instagram.com/team_faabs/',
     icon: InstagramIcon
   },
   {
-    name: 'Instagram Team Mathemazierer',
-    url: 'https://instagram.com/yourhandle',
+    name: 'Instagram Team Mathimazierer',
+    url: 'https://www.instagram.com/mathimazierer/',
     icon: InstagramIcon,
   },
   {
     name: 'Instagram Team Nuttellabroetchen',
-    url: 'https://instagram.com/yourhandle',
+    url: 'https://www.instagram.com/nutellabroetchen.robotics/',
     icon: InstagramIcon,
   },
   {
     name: 'Instagram Team Robotronic',
-    url: 'https://instagram.com/yourhandle',
+    url: 'https://www.instagram.com/robotroniclgnu/',
     icon: InstagramIcon,
   },
-  { name: 'Instagram Team Nebula', url: 'https://instagram.com/yourhandle', icon: InstagramIcon },
-  { name: 'Email', url: 'mailto:contact@technulgy.com', icon: EnvelopeIcon },
+  {
+    name: 'Email',
+    url: 'mailto:contact@technulgy.com',
+    icon: EnvelopeIcon
+  },
 ]
 </script>
 

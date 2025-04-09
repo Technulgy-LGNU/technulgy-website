@@ -19,7 +19,7 @@
 
           <p class="mt-4"><strong>Kontakt:</strong><br />
             Telefon: +49 0731 2055980<br />
-            E-Mail: <a href="mailto:contact@technulgy.com">contact@technulgy.com</a>
+            E-Mail: <a href="mailto:contact@technulgy.com" class="hover:underline">contact@technulgy.com</a>
           </p>
 
           <p class="mt-4 text-sm text-gray-500">
@@ -43,7 +43,7 @@
 
           <p class="mt-4"><strong>Contact:</strong><br />
             Phone: +49 0731 2055980<br />
-            Email: <a href="mailto:contact@technulgy.com">contact@technulgy.com</a>
+            Email: <a href="mailto:contact@technulgy.com" class="hover:underline">contact@technulgy.com</a>
           </p>
 
           <p class="mt-4 text-sm text-gray-500">
