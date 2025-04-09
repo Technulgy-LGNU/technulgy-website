@@ -15,7 +15,9 @@ const history = computed(() => [
       { team: 'Team Nuttellabroetchen', title: t('teams.nuttellabroetchen_go2025')}
     ],
     images: [
-      '/images/2025/2025-go-picture-100.jpg'
+      '/images/2025/2025-go-picture-100.jpg',
+      '/images/2025/2025-go-picture-002.jpg',
+      '/images/2025/2025-go-picture-036.jpg'
     ]
   },
   {
