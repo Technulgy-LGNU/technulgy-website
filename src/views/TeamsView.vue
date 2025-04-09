@@ -38,6 +38,21 @@ const teams = computed(() => [
       t('teams.mathimazierer_award8'),
     ]
   },
+  {
+    name: 'Team Nuttellabroetchen',
+    description: t('teams.nuttellabroetchen'),
+    image: '/images/teams/team-nuttellabroetchen.jpg',
+    awards: [
+      t('teams.nuttellabroetchen_award1'),
+      t('teams.nuttellabroetchen_award2'),
+      t('teams.nuttellabroetchen_award3'),
+      t('teams.nuttellabroetchen_award4'),
+      t('teams.nuttellabroetchen_award5'),
+      t('teams.nuttellabroetchen_award6'),
+      t('teams.nuttellabroetchen_award7'),
+      t('teams.nuttellabroetchen_award8'),
+    ]
+  }
 ])
 </script>
 
