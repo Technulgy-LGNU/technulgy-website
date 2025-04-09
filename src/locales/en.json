@@ -36,5 +36,43 @@
     "title": "Our Sponsors",
     "text": "We would like to thank all our sponsors, without whom it would not be possible for us to participate in the championships and build our robots. \nIf you would like to support us, you can contact us here:",
     "button": "Support us!"
+  },
+
+  "teams": {
+    "title": "Our Teams",
+
+    "teamfaabs": "Founded in 2019, Team Faabs participated for the first time in the Soccer LightWeight league in 2020. Their first success came in 2022 with the title of European Vice Champion in the Soccer LightWeight league. Since 2023 they are in the Soccer Open league and also won the World Championship in 2023.",
+    "teamfaabs_award1": "German Championship 2025 - 1st place Soccer Open",
+    "teamfaabs_award2": "German Championship 2025 - Technical Challenge Soccer Open",
+    "teamfaabs_award3": "South German Championship 2025 - 1st place Soccer Open",
+    "teamfaabs_award4": "German Open 2024 - 1st place Soccer Open",
+    "teamfaabs_award5": "South Open 2024 - 1st place Soccer Open",
+    "teamfaabs_award6": "World Championship 2023 - 1st place Soccer Open",
+    "teamfaabs_award7": "World Championship 2023 - Outstanding Design Award Soccer Open",
+    "teamfaabs_award8": "German Championship 2023 - 2nd place Soccer Open",
+    "teamfaabs_award9": "German Championship 2023 - 1st place Superteam Soccer Open",
+    "teamfaabs_award10": "South German Championship 2023 - 2nd place Soccer Open",
+    "teamfaabs_award11": "European Championship 2022 - 2nd place Soccer LightWeight",
+    "teamfaabs_award12": "German Championship 2022 - 2nd place Soccer LightWeight",
+
+    "mathimazierer": "Founded in 2022, Team Mathimazierer participated for the first time in the Soccer LightWeight Entry league in 2023, where they got the title of Vice European Champion. \nIn 2024 they moved to the Soccer LightWeight league and got their second Vice European Champion title.",
+    "mathimazierer_award1": "German Championship 2025 - 1st place Soccer Lightweight",
+    "mathimazierer_award2": "South German Championship 2025 - 1st place Soccer Lightweight",
+    "mathimazierer_award3": "European Championship 2024 - 2nd place Soccer Lightweight",
+    "mathimazierer_award4": "German Championship 2024 - 3th place Soccer Lightweight",
+    "mathimazierer_award5": "South German Championship 2024 - 3th place Soccer Lightweight",
+    "mathimazierer_award6": "European Championship 2023 - 2nd place Soccer Lightweight Entry",
+    "mathimazierer_award7": "German Championship 2023 - 3th place Soccer Lightweight Entry",
+    "mathimazierer_award8": "South German Championship 2023 - 2nd place Soccer Lightweight Entry",
+
+    "nuttellabroetchen": "The team Nuttellabroetchen was founded in 2022 and has been participating in the Onstage league since then and has already won several awards in this league.",
+    "nuttellabroetchen_award1": "German Championship 2025 - 1st place OnStage",
+    "nuttellabroetchen_award2": "South German Championship 2025 - 1st place OnStage",
+    "nuttellabroetchen_award3": "European Championship 2024 - 2nd place OnStage",
+    "nuttellabroetchen_award4": "German Championship 2024 - 2nd place OnStage",
+    "nuttellabroetchen_award5": "South German Championship 2024 - 1st place OnStage",
+    "nuttellabroetchen_award6": "German Championship 2023 - 3th place OnStage",
+    "nuttellabroetchen_award7": "South German Championship 2023 - 1st place OnStage",
+    "nuttellabroetchen_award8": "German Championship 2022 - 3th place OnStage"
   }
 }
