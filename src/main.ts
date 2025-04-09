@@ -7,6 +7,7 @@ import { createI18n } from 'vue-i18n'
 
 import de from './locales/de.json'
 import en from './locales/en.json'
+import posthog from '@/plugins/posthog.ts'
 
 const i18n = createI18n({
   locale: 'de',
@@ -21,6 +22,7 @@ const i18n = createI18n({
 
 const app = createApp(App)
 
+app.use(posthog.install)
 app.use(router)
 app.use(i18n)
 
