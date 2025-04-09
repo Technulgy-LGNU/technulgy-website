@@ -1,6 +1,6 @@
 {
   "name": "technulgy-website",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -19,6 +19,7 @@
     "@intlify/unplugin-vue-i18n": "^6.0.5",
     "@tailwindcss/vite": "^4.1.2",
     "axios": "^1.8.4",
+    "posthog-js": "^1.235.0",
     "tailwindcss": "^4.1.2",
     "vue": "^3.5.13",
     "vue-i18n": "^11.1.3",
