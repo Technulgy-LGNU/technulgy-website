@@ -36,7 +36,7 @@ async function switchLanguage() {
       <nav class="hidden md:flex space-x-6">
         <router-link to="/" class="hover:text-gray-300" >{{ t('nav.home')}}</router-link>
         <router-link to="/teams" class="hover:text-gray-300" >Teams</router-link>
-        <router-link to="/participationHistory" class="hover:text-gray-300" >{{ t('nav.partHistory') }}</router-link>
+        <router-link to="/participation-history" class="hover:text-gray-300" >{{ t('nav.partHistory') }}</router-link>
         <router-link to="/sponsors" class="hover:text-gray-300" >{{ t('nav.sponsors') }}</router-link>
         <router-link to="/publications" class="hover:text-gray-300" >{{ t('nav.publications') }}</router-link>
         <router-link to="/links" class="hover:text-gray-300" >Links</router-link>

@@ -9,18 +9,18 @@ const teams = computed(() => [
     description: t('teams.teamfaabs'),
     image: '/images/teams/team-faabs.jpg',
     awards: [
-      t('teams.teamfaabs_award1'),
-      t('teams.teamfaabs_award2'),
-      t('teams.teamfaabs_award3'),
-      t('teams.teamfaabs_award4'),
-      t('teams.teamfaabs_award5'),
-      t('teams.teamfaabs_award6'),
-      t('teams.teamfaabs_award7'),
-      t('teams.teamfaabs_award8'),
-      t('teams.teamfaabs_award9'),
-      t('teams.teamfaabs_award10'),
-      t('teams.teamfaabs_award11'),
-      t('teams.teamfaabs_award12'),
+      t('teams.teamfaabs_go2025'),
+      t('teams.teamfaabs_go2024-tc'),
+      t('teams.teamfaabs_vo2025'),
+      t('teams.teamfaabs_go2024'),
+      t('teams.teamfaabs_vo2024'),
+      t('teams.teamfaabs_wo2023'),
+      t('teams.teamfaabs_wo2023-da'),
+      t('teams.teamfaabs_go2023'),
+      t('teams.teamfaabs_go2023-st'),
+      t('teams.teamfaabs_vo2023'),
+      t('teams.teamfaabs_eo2022'),
+      t('teams.teamfaabs_go2022'),
     ]
   },
   {
@@ -28,14 +28,15 @@ const teams = computed(() => [
     description: t('teams.mathimazierer'),
     image: '/images/teams/team-mathemazierer.jpg',
     awards: [
-      t('teams.mathimazierer_award1'),
-      t('teams.mathimazierer_award2'),
-      t('teams.mathimazierer_award3'),
-      t('teams.mathimazierer_award4'),
-      t('teams.mathimazierer_award5'),
-      t('teams.mathimazierer_award6'),
-      t('teams.mathimazierer_award7'),
-      t('teams.mathimazierer_award8'),
+      t('teams.mathimazierer_go2025'),
+      t('teams.mathimazierer_go2025-st'),
+      t('teams.mathimazierer_vo2025'),
+      t('teams.mathimazierer_eo2024'),
+      t('teams.mathimazierer_go2024'),
+      t('teams.mathimazierer_vo2024'),
+      t('teams.mathimazierer_eo2023'),
+      t('teams.mathimazierer_go2023'),
+      t('teams.mathimazierer_vo2023'),
     ]
   },
   {
@@ -43,14 +44,14 @@ const teams = computed(() => [
     description: t('teams.nuttellabroetchen'),
     image: '/images/teams/team-nuttellabroetchen.jpg',
     awards: [
-      t('teams.nuttellabroetchen_award1'),
-      t('teams.nuttellabroetchen_award2'),
-      t('teams.nuttellabroetchen_award3'),
-      t('teams.nuttellabroetchen_award4'),
-      t('teams.nuttellabroetchen_award5'),
-      t('teams.nuttellabroetchen_award6'),
-      t('teams.nuttellabroetchen_award7'),
-      t('teams.nuttellabroetchen_award8'),
+      t('teams.nuttellabroetchen_go2025'),
+      t('teams.nuttellabroetchen_vo2025'),
+      t('teams.nuttellabroetchen_eo2024'),
+      t('teams.nuttellabroetchen_go2024'),
+      t('teams.nuttellabroetchen_vo2024'),
+      t('teams.nuttellabroetchen_go2023'),
+      t('teams.nuttellabroetchen_vo2023'),
+      t('teams.nuttellabroetchen_go2022'),
     ]
   }
 ])
@@ -73,7 +74,7 @@ const teams = computed(() => [
           <p class="text-sm text-gray-600 mb-4">{{ team.description }}</p>
 
           <div>
-            <h3 class="font-medium mb-1 text-gray-700">Awards:</h3>
+            <h3 class="font-medium mb-1 text-gray-700">{{ t('teams.awards') }}:</h3>
             <ul class="list-disc list-inside text-sm text-gray-700">
               <li v-for="award in team.awards" :key="award">{{ award }}</li>
             </ul>
