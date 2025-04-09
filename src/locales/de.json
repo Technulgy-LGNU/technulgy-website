@@ -30,5 +30,11 @@
     "title": "Verbinde dich mit uns",
     "title2": "Finde uns auf diesen Plattformen",
     "school": "Schulwebsite"
+  },
+
+  "sponsors": {
+    "title": "Unsere Sponsoren",
+    "text": "Wir möchten uns bei unseren Sponsoren bedanken, ohne die es uns nicht möglich wäre, an den Meisterschaften teilzunehmen und unsere Roboter zu bauen.\n Wenn Sie uns unterstützen möchten, können Sie uns hier kontaktieren:",
+    "button": "Unterstützen Sie uns!"
   }
 }

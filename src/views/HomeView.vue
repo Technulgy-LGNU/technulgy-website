@@ -3,9 +3,9 @@ import { onBeforeUnmount, onMounted, ref } from 'vue'
 import axios from 'axios'
 
 const images = ref<string[]>([
-  'images/standardIMG.png',
-  'images/2025-vo-picture-05.jpg',
-  'images/2025-vo-picture-06.jpg'
+  '/images/standardIMG.png',
+  '/images/2025/2025-vo-picture-05.jpg',
+  '/images/2025/2025-vo-picture-06.jpg'
 ])
 const currentImage = ref<number>(0)
 const showBanner = ref<boolean>(true)
@@ -113,7 +113,7 @@ const submit = async () => {
       <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-6 items-start">
         <!-- Image + Caption -->
         <div class="flex flex-col items-center">
-          <img src="/images/2025-go-picture-100.jpg" alt="three winners from rcj go 2025" class="rounded-xl shadow-lg" />
+          <img src="/images/2025/2025-go-picture-100.jpg" alt="three winners from rcj go 2025" class="rounded-xl shadow-lg" />
           <p class="mt-4 text-sm text-gray-500 text-center max-w-xs">
             {{ $t('home.germanOpenCaption') }}
           </p>
@@ -142,7 +142,7 @@ const submit = async () => {
           </div>
           <!-- Image + Caption -->
           <div class="flex flex-col items-center">
-            <img src="/images/2025-vo-picture-42.jpg" alt="all teams RCJV 2025" class="rounded-xl shadow-lg" />
+            <img src="/images/2025/2025-vo-picture-42.jpg" alt="all teams RCJV 2025" class="rounded-xl shadow-lg" />
             <p class="mt-4 text-sm text-gray-500 text-center max-w-xs">
               {{ $t('home.southOpenCaption') }}
             </p>
