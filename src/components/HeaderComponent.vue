@@ -69,12 +69,12 @@ async function switchLanguage() {
     </div>
 
     <!-- Mobile Navigation -->
-    <div v-if="mobileMenuOpen" class="md:hidden bg-gray-700 py-3">
-      <router-link to="/" class="hover:text-gray-300" >Home</router-link>
+    <div v-if="mobileMenuOpen" class="md:hidden bg-gray-800 text-white px-4 py-6 flex flex-col space-y-4 text-lg">
+      <router-link to="/" class="hover:text-gray-300" >{{ t('nav.home')}}</router-link>
       <router-link to="/teams" class="hover:text-gray-300" >Teams</router-link>
-      <router-link to="/participationHistory" class="hover:text-gray-300" >Participation History</router-link>
-      <router-link to="/sponsors" class="hover:text-gray-300" >Sponsors</router-link>
-      <router-link to="/publications" class="hover:text-gray-300" >Publications</router-link>
+      <router-link to="/participation-history" class="hover:text-gray-300" >{{ t('nav.partHistory') }}</router-link>
+      <router-link to="/sponsors" class="hover:text-gray-300" >{{ t('nav.sponsors') }}</router-link>
+      <router-link to="/publications" class="hover:text-gray-300" >{{ t('nav.publications') }}</router-link>
       <router-link to="/links" class="hover:text-gray-300" >Links</router-link>
       <router-link to="/Impressum" class="hover:text-gray-300" >Impressum</router-link>
     </div>

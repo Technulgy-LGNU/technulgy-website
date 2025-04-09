@@ -5,7 +5,9 @@ import axios from 'axios'
 const images = ref<string[]>([
   '/images/standardIMG.png',
   '/images/2025/2025-vo-picture-05.jpg',
-  '/images/2025/2025-vo-picture-06.jpg'
+  '/images/2025/2025-vo-picture-06.jpg',
+  '/images/2025/2025-go-picture-002.jpg',
+  '/images/2025/2025-go-picture-036.jpg'
 ])
 const currentImage = ref<number>(0)
 const showBanner = ref<boolean>(true)
