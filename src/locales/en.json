@@ -26,9 +26,15 @@
     "text": "There will be the embeds of all publications of each team here in the future, but currently you can find everything here: "
   },
 
-    "links": {
-        "title": "Connect with us",
-        "title2": "Find us on these platforms",
-        "school": "School Website"
-    }
+  "links": {
+    "title": "Connect with us",
+    "title2": "Find us on these platforms",
+    "school": "School Website"
+  },
+
+  "sponsors": {
+    "title": "Our Sponsors",
+    "text": "We would like to thank all our sponsors, without whom it would not be possible for us to participate in the championships and build our robots. \nIf you would like to support us, you can contact us here:",
+    "button": "Support us!"
+  }
 }

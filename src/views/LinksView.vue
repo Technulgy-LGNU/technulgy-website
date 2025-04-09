@@ -4,11 +4,29 @@ import { EnvelopeIcon } from '@heroicons/vue/24/solid'
 import { useI18n } from 'vue-i18n'
 const { t } = useI18n()
 
+const school = t('links.school')
+
 const links = [
-  { name: 'GitHub', url: 'https://github.com/technulgy-lgnu', icon: GitHubIcon },
-  { name: t('links.school'), url: 'https://lgnu.de', icon: GoogleChromeIcon },
-  { name: 'Official YouTube', url: 'https://www.youtube.com/@Technulgy', icon: YouTubeIcon },
-  { name: 'Instagram Team Faabs', url: 'https://instagram.com/yourhandle', icon: InstagramIcon },
+  {
+    name: 'GitHub',
+    url: 'https://github.com/technulgy-lgnu',
+    icon: GitHubIcon
+  },
+  {
+    name: school,
+    url: 'https://lgnu.de',
+    icon: GoogleChromeIcon
+  },
+  {
+    name: 'Official YouTube',
+    url: 'https://www.youtube.com/@Technulgy',
+    icon: YouTubeIcon
+  },
+  {
+    name: 'Instagram Team Faabs',
+    url: 'https://instagram.com/yourhandle',
+    icon: InstagramIcon
+  },
   {
     name: 'Instagram Team Mathemazierer',
     url: 'https://instagram.com/yourhandle',
