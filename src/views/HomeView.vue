@@ -1,6 +1,21 @@
 <script setup lang="ts">
-import { onBeforeUnmount, onMounted, ref } from 'vue'
+import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
 import axios from 'axios'
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
+
+const videos = computed(() => [
+  {
+    id: 'e9JvZN99PhQ',
+    title: t('home.video_go2024'),
+    description: t('home.video_go2024-description'),
+  },
+  {
+    id: '1uGySXI9IYg',
+    title: t('home.video_eo2022'),
+    description: t('home.video_eo2022-description'),
+  }
+])
 
 const images = ref<string[]>([
   '/images/standardIMG.png',
@@ -99,8 +114,8 @@ const submit = async () => {
     </div>
   </div>
   <div>
+    <!-- ABOUT US SECTION -->
     <div>
-      <!-- ABOUT US SECTION -->
       <section ref="infoSection" class="min-h-[45vh] bg-cyan1 text-white py-10 px-6 md:px-20">
         <div class="max-w-4xl mx-auto text-center">
           <h2 class="text-4xl font-bold mb-6">{{ $t('home.about') }}</h2>
@@ -111,28 +126,29 @@ const submit = async () => {
       </section>
     </div>
     <!-- German Open 2025 -->
-    <section class="min-h-[60vh] bg-white py-10 px-4 md:px-16">
-      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-6 items-start">
-        <!-- Image + Caption -->
-        <div class="flex flex-col items-center">
-          <img src="/images/2025/2025-go-picture-100.jpg" alt="three winners from rcj go 2025" class="rounded-xl shadow-lg" />
-          <p class="mt-4 text-sm text-gray-500 text-center max-w-xs">
-            {{ $t('home.germanOpenCaption') }}
-          </p>
-        </div>
-
-        <!-- Text -->
-        <div>
-          <h3 class="text-2xl font-semibold mb-2">{{ $t('home.germanOpen') }}</h3>
-          <p class="text-base leading-relaxed">
-            {{ $t('home.germanOpenText') }}
-          </p>
-        </div>
-      </div>
-    </section>
-
     <div>
-      <!-- South Open 2025 -->
+      <section class="min-h-[60vh] bg-white py-10 px-4 md:px-16">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-6 items-start">
+          <!-- Image + Caption -->
+          <div class="flex flex-col items-center">
+            <img src="/images/2025/2025-go-picture-100.jpg" alt="three winners from rcj go 2025" class="rounded-xl shadow-lg" />
+            <p class="mt-4 text-sm text-gray-500 text-center max-w-xs">
+              {{ $t('home.germanOpenCaption') }}
+            </p>
+          </div>
+
+          <!-- Text -->
+          <div>
+            <h3 class="text-2xl font-semibold mb-2">{{ $t('home.germanOpen') }}</h3>
+            <p class="text-base leading-relaxed">
+              {{ $t('home.germanOpenText') }}
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- South Open 2025 -->
+    <div>
       <section class="min-h-[60vh] bg-gray-50 py-10 px-4 md:px-16">
         <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-6 items-start">
           <!-- Text -->
@@ -152,9 +168,38 @@ const submit = async () => {
         </div>
       </section>
     </div>
+    <!-- Videos -->
     <div>
-      <!-- Form -->
-      <section class="min-h-[60vh] bg-white py-10 px-6 md:px-20">
+      <section class="bg-white py-12 px-4 md:px-16 text-gray-800">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-3xl font-bold text-center mb-10">{{ t('home.videos') }}</h2>
+
+          <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+            <div
+              v-for="video in videos"
+              :key="video.id"
+              class="bg-white rounded-xl shadow-sm hover:shadow-md transition overflow-hidden"
+            >
+              <div class="aspect-w-16 aspect-h-9">
+                <iframe
+                  class="w-full h-full"
+                  :src="`https://www.youtube.com/embed/${video.id}`"
+                  allowfullscreen
+                  :title="video.title"
+                ></iframe>
+              </div>
+              <div class="p-4">
+                <h3 class="text-lg font-semibold mb-1">{{ video.title }}</h3>
+                <p class="text-sm text-gray-600">{{ video.description }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Form -->
+    <div>
+      <section class="min-h-[60vh] bg-gray-50 py-10 px-6 md:px-20">
         <form @submit.prevent="submit" class="max-w-4xl mx-auto">
           <div class="max-w-4xl mx-auto">
             <h3 class="text-3xl font-semibold mb-4">{{ $t('home.formTitle') }}</h3>
@@ -166,18 +211,18 @@ const submit = async () => {
                 v-model="name"
                 type="text"
                 placeholder="Name"
-                class="border border-gray-300 rounded-lg p-4"
+                class="border border-gray-300 rounded-lg p-4 bg-white"
               />
               <input
                 v-model="email"
                 type="email"
                 placeholder="Email"
-                class="border border-gray-300 rounded-lg p-4"
+                class="border border-gray-300 rounded-lg p-4 bg-white"
               />
               <textarea
                 v-model="message"
                 placeholder="Message"
-                class="border border-gray-300 rounded-lg p-4 col-span-1 md:col-span-2"
+                class="border border-gray-300 rounded-lg p-4 col-span-1 md:col-span-2 bg-white"
               ></textarea>
             </div>
             <div class="md:grid-cols-2 gap-6 py-4">
