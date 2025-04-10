@@ -10,7 +10,7 @@ const teams = computed(() => [
     image: '/images/teams/team-faabs.jpg',
     awards: [
       t('teams.teamfaabs_go2025'),
-      t('teams.teamfaabs_go2024-tc'),
+      t('teams.teamfaabs_go2025-tc'),
       t('teams.teamfaabs_vo2025'),
       t('teams.teamfaabs_go2024'),
       t('teams.teamfaabs_vo2024'),

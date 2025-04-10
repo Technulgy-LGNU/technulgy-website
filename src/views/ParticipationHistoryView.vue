@@ -25,7 +25,7 @@ const history = computed(() => [
     year: 2025,
     location: 'Vöhringen',
     awards: [
-      { team: 'Team Faabs', title: t('teams.teamfaabs_v02025') },
+      { team: 'Team Faabs', title: t('teams.teamfaabs_vo2025') },
       { team: 'Team Mathimazierer', title: t('teams.mathimazierer_vo2025')},
       { team: 'Team Nuttellabroetchen', title: t('teams.nuttellabroetchen_vo2025')}
     ],
