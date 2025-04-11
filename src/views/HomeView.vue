@@ -67,7 +67,7 @@ const submit = async () => {
         content: message.value
       }, {
         headers: {
-          'Content-Type': 'application/json',Fix
+          'Content-Type': 'application/json',
         }
       })
       .then(res => {
