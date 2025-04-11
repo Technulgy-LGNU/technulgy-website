@@ -61,7 +61,7 @@ const reset = () => {
 const submit = async () => {
   try {
     await axios
-      .post('http://localhost:3001/api/newForm', {
+      .post('https://tas.technulgy.com/api/newForm', {
         name: name.value,
         email: email.value,
         content: message.value
