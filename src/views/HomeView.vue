@@ -18,7 +18,7 @@ const videos = computed(() => [
 ])
 
 const images = ref<string[]>([
-  '/images/standardIMG.png',
+  '/images/standardIMG.jpg',
   '/images/2025/2025-vo-picture-05.jpg',
   '/images/2025/2025-vo-picture-06.jpg',
   '/images/2025/2025-go-picture-002.jpg',
@@ -61,7 +61,7 @@ const reset = () => {
 const submit = async () => {
   try {
     await axios
-      .post('http://localhost:3001/api/newForm', {
+      .post('https://tas.technulgy.com/api/newForm', {
         name: name.value,
         email: email.value,
         content: message.value
