@@ -61,13 +61,13 @@ const reset = () => {
 const submit = async () => {
   try {
     await axios
-      .post('https://tas.technulgy.com/api/newForm', {
+      .post('http://localhost:3001/api/newForm', {
         name: name.value,
         email: email.value,
         content: message.value
       }, {
         headers: {
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',Fix
         }
       })
       .then(res => {
