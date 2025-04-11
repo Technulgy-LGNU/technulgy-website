@@ -6,6 +6,11 @@
     "publications": "Veröffentlichungen"
   },
 
+  "cookies": {
+    "submit": "Akzeptieren",
+    "text": "Diese Website verwendet Cookies, um Ihnen die bestmögliche Funktionalität bieten zu können. Wenn Sie auf \"Akzeptieren\" klicken oder die Website verwenden, stimmen Sie der Verwendung von Cookies zu."
+  },
+
   "home": {
     "more": "MEHR ERFAHREN",
     "about": "ÜBER UNS",

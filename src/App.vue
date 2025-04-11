@@ -4,6 +4,7 @@ import HeaderComponent from '@/components/HeaderComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
 import { useI18n } from 'vue-i18n'
 import { onMounted, ref } from 'vue'
+import CookiesConsentComponent from '@/components/CookiesConsentComponent.vue'
 
 const { locale } = useI18n()
 
@@ -31,6 +32,7 @@ onMounted(() =>{
     <HeaderComponent />
     <main ref="mainContent" tabindex="-1" class="flex-grow outline-none focus:outline-none">
       <RouterView />
+      <CookiesConsentComponent />
     </main>
     <FooterComponent />
   </div>

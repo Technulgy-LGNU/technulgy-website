@@ -6,6 +6,11 @@
     "publications": "Publications"
   },
 
+  "cookies": {
+    "submit": "Accept",
+    "text": "This website uses cookies to provide you with the best possible functionality. By clicking \"Accept\" or using the site, you agree to the use of cookies."
+  },
+
   "home": {
     "more": "LEARN MORE",
     "about": "ABOUT US",
