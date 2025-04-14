@@ -16,6 +16,7 @@ services:
         - "traefik.http.routers.technulgy-website.entrypoints=websecure"
         - "traefik.http.routers.technulgy-website.tls=true"
         - "traefik.http.routers.technulgy-website.tls.certresolver=cfACME"
+        - "traefik.http.routers.technulgy-website.middlewares=redirect-to-https"
 
 networks:
   traefik-nw:
