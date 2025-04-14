@@ -54,6 +54,8 @@
   "teams": {
     "title": "Our Teams",
     "awards": "Awards",
+    "active": "Active Teams",
+    "inactive": "Former Teams",
 
     "teamfaabs": "Founded in 2019, Team Faabs participated for the first time in the Soccer LightWeight league in 2020. Their first success came in 2022 with the title of European Vice Champion in the Soccer LightWeight league. Since 2023 they are in the Soccer Open league and also won the World Open in 2023.",
     "teamfaabs_go2025": "German Open 2025 - 1st place Soccer Open",
@@ -87,7 +89,16 @@
     "nuttellabroetchen_vo2024": "South German Open 2024 - 1st place OnStage",
     "nuttellabroetchen_go2023": "German Open 2023 - 3th place OnStage",
     "nuttellabroetchen_vo2023": "South German Open 2023 - 1st place OnStage",
-    "nuttellabroetchen_go2022": "German Open 2022 - 3th place OnStage"
+    "nuttellabroetchen_go2022": "German Open 2022 - 3th place OnStage",
+
+    "robotronic": "The team Robotronic was founded in 2018 and participated for the first time in the Soccer Entry league in 2019. From 2020 to 2024, the team participated in the Soccer LightWeight league and made it to the World Open in 2023 and 2024.",
+    "robotronic_go2024": "German Open 2024 - 2nd place Soccer Lightweight",
+    "robotronic_vo2024": "South German Open 2024 - 1st place Soccer Lightweight",
+    "robotronic_wo2023-st": "World Open 2023 - 1st place Soccer Lightweight SuperTeam",
+    "robotronic_go2023": "German Open 2023 - 1st place Soccer Lightweight",
+    "robotronic_go2023-st": "German Open 2023 - 1st place Soccer Lightweight SuperTeam",
+    "robotronic_vo2023": "South German Open 2023 - 2nd place Soccer Lightweight",
+    "robotronic_vo2019": "South German Open 2019 - 3rd place Soccer Entry"
   },
 
   "partHistory": {

@@ -54,6 +54,8 @@
   "teams": {
     "title": "Unsere Teams",
     "awards": "Preise",
+    "active": "Aktive Teams",
+    "inactive": "Ehemalige Teams",
 
     "teamfaabs": "Gegründet in 2019 nam das Team Faabs 2020 zum ersten mal in der Liga Soccer LightWeight teil. Den ersten Erfolg hatten Sie 2022 mit dem Titel des Europäischen Vize Meisters in der Liga Soccer LightWeight. Seit 2023 sind Sie in der Liga Soccer Open und gewannen 2023 auch die Weltmeisterschaft",
     "teamfaabs_go2025": "Deutsche Meisterschaft 2025 - 1. Platz Soccer Open",
@@ -89,7 +91,16 @@
     "nuttellabroetchen_vo2024": "Süddeutsche Meisterschaft 2024 - 1. Platz OnStage",
     "nuttellabroetchen_go2023": "Deutsche Meisterschaft 2023 - 3. Platz OnStage",
     "nuttellabroetchen_vo2023": "Süddeutsche Meisterschaft 2023 - 1. Platz OnStage",
-    "nuttellabroetchen_go2022": "Deutsche Meisterschaft 2022 - 3. Platz OnStage"
+    "nuttellabroetchen_go2022": "Deutsche Meisterschaft 2022 - 3. Platz OnStage",
+
+    "robotronic": "Das Team Robotronic wurde 2018 gegründet und hat 2019 zum ersten mal in der Liga Soccer Entry teilgenommen. Von 2020-2024 nahm das Team in der Liga Soccer LightWeight teil und ist 2023 und 2024 auf die Weltmeisterschaft gekommen.",
+    "robotronic_go2024": "Deutsche Meisterschaft 2024 - 2. Platz Soccer Lightweight",
+    "robotronic_vo2024": "Süddeutsche Meisterschaft 2024 - 1. Platz Soccer Lightweight",
+    "robotronic_wo2023-st": "Weltmeisterschaft 2023 - 1. Platz Soccer Lightweight SuperTeam",
+    "robotronic_go2023": "Deutsche Meisterschaft 2023 - 1. Platz Soccer Lightweight",
+    "robotronic_go2023-st": "Deutsche Meisterschaft 2023 - 1. Platz Soccer Lightweight SuperTeam",
+    "robotronic_vo2023": "Süddeutsche Meisterschaft 2023 - 2. Platz Soccer Lightweight",
+    "robotronic_vo2019": "Süddeutsche Meisterschaft 2019 - 3. Platz Soccer Entry"
   },
 
   "partHistory": {
