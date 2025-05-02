@@ -36,7 +36,23 @@
   },
 
   "publications": {
-    "title": "Veröffentlichungen"
+    "title": "Veröffentlichungen",
+
+    "titleTDP": "Poster und Technical Description Papers",
+    "TDPText": "Wir veröffentlichen alle unsere Poster und Technical Description Papers, die wir auf den Meisterschaften präsentieren, nach dieser. \nHier finden Sie die Poster und Technical Description Papers der letzten Meisterschaften.",
+    "TDPCaption": "Poster von Team Faabs von der WM 2023",
+
+    "titleMechanics": "Mechanik",
+    "mechanicsText": "Wir haben es uns zur Aufgabe gemacht, die Mechanik unserer Roboter so zu gestalten, dass sie den Anforderungen der Liga gerecht wird. \nHier finden Sie alle unsere Mechaniken, die wir auf den Meisterschaften präsentieren.",
+    "mechanicsCaption": "Roboter von Team Faabs von der WM 2023",
+
+    "titleElectronics": "Elektronik",
+    "electronicsText": "Aktuell haben wir nur ältere Eagle Libraries veröffentlicht, aber wir arbeiten daran, auch die unserer Roboter zu veröffentlichen",
+    "electronicsCaption": "Platine von Team Robotronics der WM 2023",
+
+    "titleSoftware": "Software",
+    "softwareText": "Auch bei der Software wollen wir den anderen Teams helfen, indem wir unsere Software veröffentlichen. \nHier finden Sie alle unsere Software, die wir auf den Meisterschaften präsentieren.",
+    "softwareCaption": "Von uns verwendete Software"
   },
 
   "links": {

@@ -36,7 +36,23 @@
   },
 
   "publications": {
-    "title": "Publications"
+    "title": "Publications",
+
+    "titleTDP": "Poster and Technical Description Papers",
+    "TDPText": "Here you can find our posters and technical description papers from the last competitions. \nIf you have any questions about the content, feel free to contact us.",
+    "TDPCaption": "Poster from Team Faabs from the 2023 WM",
+
+    "titleMechanics": "Mechanical Design",
+    "mechanicsText": "We made it our goal to build the perfect robots, you can find a few different iterations published here.",
+    "mechanicsCaption": "Team Faabs 2023 Soccer Open World Champion",
+
+    "titleElectronics": "Electronics",
+    "electronicsText": "Currently we only published some older Eagle libraries, but we plan to publish more in the future.",
+    "electronicsCaption": "Team Robotronics 2023 Mainboard",
+
+    "titleSoftware": "Software",
+    "softwareText": "We also want to help other teams with their software, so here a list of published projects from the last years:",
+    "softwareCaption": "Software used by us"
   },
 
   "links": {
