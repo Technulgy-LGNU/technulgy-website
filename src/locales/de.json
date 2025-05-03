@@ -36,7 +36,24 @@
   },
 
   "publications": {
-    "text": "Hier werden in Zukunft die Einbettungen aller Veröffentlichungen jedes Teams sein, aber derzeit finden Sie alles hier: "
+    "title": "Veröffentlichungen",
+
+    "titleTDP": "Poster und Technical Description Papers",
+    "TDPText": "Wir veröffentlichen alle unsere Poster und Technical Description Papers, die wir auf den Meisterschaften präsentieren, nach dieser. \nHier finden Sie die Poster und Technical Description Papers der letzten Meisterschaften.",
+    "TDPCaption": "Poster von Team Faabs von der WM 2023",
+
+    "titleMechanics": "Mechanik",
+    "mechanicsText": "Wir haben es uns zur Aufgabe gemacht, die Mechanik unserer Roboter so zu gestalten, dass sie den Anforderungen der Liga gerecht wird. \nHier finden Sie alle unsere Mechaniken, die wir auf den Meisterschaften präsentieren.",
+    "mechanicsCaption": "Roboter von Team Faabs von der WM 2023",
+
+    "titleElectronics": "Elektronik",
+    "electronicsText": "Aktuell haben wir nur ältere Eagle Libraries veröffentlicht, aber wir arbeiten daran, auch die unserer Roboter zu veröffentlichen",
+    "electronicsCaption": "Platine von Team Robotronics der WM 2023",
+
+    "titleSoftware": "Software",
+    "softwareText": "Auch bei der Software wollen wir den anderen Teams helfen, indem wir unsere Software veröffentlichen. \nHier finden Sie alle unsere Software, die wir auf den Meisterschaften präsentieren.",
+    "softwareText2": "All unsere Software ist unter der MIT License veröffentlicht. \nWenn Sie Fragen zu unserer Software haben, können Sie uns gerne kontaktieren. \n Wir veröffentlichen auch jedes Jahr den LaTeX Code unser Technical Description Papers, diese könnt Ihr dann auf GitHub finden.",
+    "softwareCaption": "Von uns verwendete Software"
   },
 
   "links": {
@@ -54,6 +71,8 @@
   "teams": {
     "title": "Unsere Teams",
     "awards": "Preise",
+    "active": "Aktive Teams",
+    "inactive": "Ehemalige Teams",
 
     "teamfaabs": "Gegründet in 2019 nam das Team Faabs 2020 zum ersten mal in der Liga Soccer LightWeight teil. Den ersten Erfolg hatten Sie 2022 mit dem Titel des Europäischen Vize Meisters in der Liga Soccer LightWeight. Seit 2023 sind Sie in der Liga Soccer Open und gewannen 2023 auch die Weltmeisterschaft",
     "teamfaabs_go2025": "Deutsche Meisterschaft 2025 - 1. Platz Soccer Open",
@@ -89,7 +108,16 @@
     "nuttellabroetchen_vo2024": "Süddeutsche Meisterschaft 2024 - 1. Platz OnStage",
     "nuttellabroetchen_go2023": "Deutsche Meisterschaft 2023 - 3. Platz OnStage",
     "nuttellabroetchen_vo2023": "Süddeutsche Meisterschaft 2023 - 1. Platz OnStage",
-    "nuttellabroetchen_go2022": "Deutsche Meisterschaft 2022 - 3. Platz OnStage"
+    "nuttellabroetchen_go2022": "Deutsche Meisterschaft 2022 - 3. Platz OnStage",
+
+    "robotronic": "Das Team Robotronic wurde 2018 gegründet und hat 2019 zum ersten mal in der Liga Soccer Entry teilgenommen. Von 2020-2024 nahm das Team in der Liga Soccer LightWeight teil und ist 2023 und 2024 auf die Weltmeisterschaft gekommen.",
+    "robotronic_go2024": "Deutsche Meisterschaft 2024 - 2. Platz Soccer Lightweight",
+    "robotronic_vo2024": "Süddeutsche Meisterschaft 2024 - 1. Platz Soccer Lightweight",
+    "robotronic_wo2023-st": "Weltmeisterschaft 2023 - 1. Platz Soccer Lightweight SuperTeam",
+    "robotronic_go2023": "Deutsche Meisterschaft 2023 - 1. Platz Soccer Lightweight",
+    "robotronic_go2023-st": "Deutsche Meisterschaft 2023 - 1. Platz Soccer Lightweight SuperTeam",
+    "robotronic_vo2023": "Süddeutsche Meisterschaft 2023 - 2. Platz Soccer Lightweight",
+    "robotronic_vo2019": "Süddeutsche Meisterschaft 2019 - 3. Platz Soccer Entry"
   },
 
   "partHistory": {

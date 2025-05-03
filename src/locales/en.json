@@ -36,7 +36,24 @@
   },
 
   "publications": {
-    "text": "There will be the embeds of all publications of each team here in the future, but currently you can find everything here: "
+    "title": "Publications",
+
+    "titleTDP": "Poster and Technical Description Papers",
+    "TDPText": "Here you can find our posters and technical description papers from the last competitions. \nIf you have any questions about the content, feel free to contact us.",
+    "TDPCaption": "Poster from Team Faabs from the 2023 WM",
+
+    "titleMechanics": "Mechanical Design",
+    "mechanicsText": "We made it our goal to build the perfect robots, you can find a few different iterations published here.",
+    "mechanicsCaption": "Team Faabs 2023 Soccer Open World Champion",
+
+    "titleElectronics": "Electronics",
+    "electronicsText": "Currently we only published some older Eagle libraries, but we plan to publish more in the future.",
+    "electronicsCaption": "Team Robotronics 2023 Mainboard",
+
+    "titleSoftware": "Software",
+    "softwareText": "We also want to help other teams with their software, so here a list of published projects from the last years:",
+    "softwareText2": "All of our software is licensed under the MIT License. \nIf you have any questions about the software, feel free to contact us.\n We also OpenSource the LaTeX Code of all of our Technical Description Papers, you can find it on GitHub.",
+    "softwareCaption": "Software used by us"
   },
 
   "links": {
@@ -54,6 +71,8 @@
   "teams": {
     "title": "Our Teams",
     "awards": "Awards",
+    "active": "Active Teams",
+    "inactive": "Former Teams",
 
     "teamfaabs": "Founded in 2019, Team Faabs participated for the first time in the Soccer LightWeight league in 2020. Their first success came in 2022 with the title of European Vice Champion in the Soccer LightWeight league. Since 2023 they are in the Soccer Open league and also won the World Open in 2023.",
     "teamfaabs_go2025": "German Open 2025 - 1st place Soccer Open",
@@ -87,7 +106,16 @@
     "nuttellabroetchen_vo2024": "South German Open 2024 - 1st place OnStage",
     "nuttellabroetchen_go2023": "German Open 2023 - 3th place OnStage",
     "nuttellabroetchen_vo2023": "South German Open 2023 - 1st place OnStage",
-    "nuttellabroetchen_go2022": "German Open 2022 - 3th place OnStage"
+    "nuttellabroetchen_go2022": "German Open 2022 - 3th place OnStage",
+
+    "robotronic": "The team Robotronic was founded in 2018 and participated for the first time in the Soccer Entry league in 2019. From 2020 to 2024, the team participated in the Soccer LightWeight league and made it to the World Open in 2023 and 2024.",
+    "robotronic_go2024": "German Open 2024 - 2nd place Soccer Lightweight",
+    "robotronic_vo2024": "South German Open 2024 - 1st place Soccer Lightweight",
+    "robotronic_wo2023-st": "World Open 2023 - 1st place Soccer Lightweight SuperTeam",
+    "robotronic_go2023": "German Open 2023 - 1st place Soccer Lightweight",
+    "robotronic_go2023-st": "German Open 2023 - 1st place Soccer Lightweight SuperTeam",
+    "robotronic_vo2023": "South German Open 2023 - 2nd place Soccer Lightweight",
+    "robotronic_vo2019": "South German Open 2019 - 3rd place Soccer Entry"
   },
 
   "partHistory": {

@@ -34,6 +34,21 @@ const history = computed(() => [
       '/images/2025/2025-vo-picture-05.jpg',
       '/images/2025/2025-vo-picture-06.jpg'
     ]
+  },
+  {
+    name: t('partHistory.wo'),
+    year: 2023,
+    location: "Bordeaux (France)",
+    awards: [
+      { team: 'Team Faabs', title: t('teams.teamfaabs_wo2023') },
+      { team: 'Team Faabs', title: t('teams.teamfaabs_wo2023-ad') },
+      { team: 'Team Robotronic', title: t('teams.robotronic_wo2023-st') }
+    ],
+    images: [
+      '/images/2023/LGNU-WorldOpen.jpg',
+      '/images/2023/RoboCupBordeaux-Logo.jpeg',
+      '/images/2023/RoboCup-WM.jpg'
+    ]
   }
 ])
 </script>
