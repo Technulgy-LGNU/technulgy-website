@@ -52,6 +52,7 @@
 
     "titleSoftware": "Software",
     "softwareText": "We also want to help other teams with their software, so here a list of published projects from the last years:",
+    "softwareText2": "All of our software is licensed under the MIT License. \nIf you have any questions about the software, feel free to contact us.\n We also OpenSource the LaTeX Code of all of our Technical Description Papers, you can find it on GitHub.",
     "softwareCaption": "Software used by us"
   },
 

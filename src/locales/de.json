@@ -52,6 +52,7 @@
 
     "titleSoftware": "Software",
     "softwareText": "Auch bei der Software wollen wir den anderen Teams helfen, indem wir unsere Software veröffentlichen. \nHier finden Sie alle unsere Software, die wir auf den Meisterschaften präsentieren.",
+    "softwareText2": "All unsere Software ist unter der MIT License veröffentlicht. \nWenn Sie Fragen zu unserer Software haben, können Sie uns gerne kontaktieren. \n Wir veröffentlichen auch jedes Jahr den LaTeX Code unser Technical Description Papers, diese könnt Ihr dann auf GitHub finden.",
     "softwareCaption": "Von uns verwendete Software"
   },
 
