@@ -2,37 +2,37 @@
 const sponsors = [
   {
     name: 'Blech & Technik',
-    logo: '/images/sponsors/bt_logo.jpg',
+    logo: '/images/sponsors/bt_logo.webp',
     url: 'https://www.blechundtechnik.de/'
   },
   {
     name: 'Multivac',
-    logo: '/images/sponsors/logo-multivac-blue.jpg',
+    logo: '/images/sponsors/logo-multivac-blue.webp',
     url: 'https://www.multivac.com/de/'
   },
   {
     name: 'Wieland',
-    logo: '/images/sponsors/logo_wieland.jpg',
+    logo: '/images/sponsors/logo_wieland.webp',
     url: 'https://www.wieland.com/de/'
   },
   {
     name: 'Maxon Motors',
-    logo: '/images/sponsors/maxonmoters.jpg',
+    logo: '/images/sponsors/maxonmoters.webp',
     url: 'https://www.maxongroup.com/de-de'
   },
   {
     name: 'Ulm Digital',
-    logo: '/images/sponsors/ulmdigital.jpg',
+    logo: '/images/sponsors/ulmdigital.webp',
     url: 'https://ulm-digital.com/'
   },
   {
     name: 'ZwickRoll',
-    logo: '/images/sponsors/zwickroll.jpg',
+    logo: '/images/sponsors/zwickroll.webp',
     url: 'https://www.zwickroell.com/de/'
   },
   {
     name: 'Multi CB',
-    logo: '/images/sponsors/multicb.jpg',
+    logo: '/images/sponsors/multicb.webp',
     url: 'https://www.multicb.com/'
   }
 ]

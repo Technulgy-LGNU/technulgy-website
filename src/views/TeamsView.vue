@@ -7,7 +7,7 @@ const teamsActive = computed(() => [
   {
     name: 'Team Faabs',
     description: t('teams.teamfaabs'),
-    image: '/images/teams/team-faabs.jpg',
+    image: '/images/teams/team-faabs.webp',
     awards: [
       t('teams.teamfaabs_go2025'),
       t('teams.teamfaabs_go2025-tc'),
@@ -26,7 +26,7 @@ const teamsActive = computed(() => [
   {
     name: 'Team Mathimazierer',
     description: t('teams.mathimazierer'),
-    image: '/images/teams/team-mathemazierer.jpg',
+    image: '/images/teams/team-mathemazierer.webp',
     awards: [
       t('teams.mathimazierer_go2025'),
       t('teams.mathimazierer_go2025-st'),
@@ -42,7 +42,7 @@ const teamsActive = computed(() => [
   {
     name: 'Team Nuttellabroetchen',
     description: t('teams.nuttellabroetchen'),
-    image: '/images/teams/team-nuttellabroetchen.jpg',
+    image: '/images/teams/team-nuttellabroetchen.webp',
     awards: [
       t('teams.nuttellabroetchen_go2025'),
       t('teams.nuttellabroetchen_vo2025'),
@@ -60,7 +60,7 @@ const teamsInactive = computed(() => [
   {
     name: 'Team Robotronic',
     description: t('teams.robotronic'),
-    image: '/images/teams/team-robotronic.JPG',
+    image: '/images/teams/team-robotronic.webp',
     awards: [
       t('teams.robotronic_go2024'),
       t('teams.robotronic_vo2024'),

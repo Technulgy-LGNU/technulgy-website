@@ -15,9 +15,9 @@ const history = computed(() => [
       { team: 'Team Nuttellabroetchen', title: t('teams.nuttellabroetchen_go2025')}
     ],
     images: [
-      '/images/2025/2025-go-picture-100.jpg',
-      '/images/2025/2025-go-picture-002.jpg',
-      '/images/2025/2025-go-picture-036.jpg'
+      '/images/2025/2025-go-picture-100.webp',
+      '/images/2025/2025-go-picture-002.webp',
+      '/images/2025/2025-go-picture-036.webp'
     ]
   },
   {
@@ -30,9 +30,9 @@ const history = computed(() => [
       { team: 'Team Nuttellabroetchen', title: t('teams.nuttellabroetchen_vo2025')}
     ],
     images: [
-      '/images/2025/2025-vo-picture-42.jpg',
-      '/images/2025/2025-vo-picture-05.jpg',
-      '/images/2025/2025-vo-picture-06.jpg'
+      '/images/2025/2025-vo-picture-42.webp',
+      '/images/2025/2025-vo-picture-05.webp',
+      '/images/2025/2025-vo-picture-06.webp'
     ]
   },
   {
@@ -45,9 +45,9 @@ const history = computed(() => [
       { team: 'Team Robotronic', title: t('teams.robotronic_wo2023-st') }
     ],
     images: [
-      '/images/2023/LGNU-WorldOpen.jpg',
+      '/images/2023/LGNU-WorldOpen.webp',
       '/images/2023/RoboCupBordeaux-Logo.jpeg',
-      '/images/2023/RoboCup-WM.jpg'
+      '/images/2023/RoboCup-WM.webp'
     ]
   }
 ])

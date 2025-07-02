@@ -11,7 +11,7 @@
         <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-6 items-start">
           <!-- Image + Caption -->
           <div class="flex flex-col items-center">
-            <img src="/images/2024/teamFaabs-poster.jpg" alt="three winners from rcj go 2025" class="rounded-xl shadow-lg" />
+            <img src="/images/2024/teamFaabs-poster.webp" alt="three winners from rcj go 2025" class="rounded-xl shadow-lg" />
             <p class="mt-4 text-sm text-gray-500 text-center max-w-xs">
               {{ $t('publications.TDPCaption') }}
             </p>
@@ -44,7 +44,7 @@
 
           <!-- Image + Caption -->
           <div class="flex flex-col items-center">
-            <img src="/images/2023/HBG_v2023.jpg" alt="three winners from rcj go 2025" class="rounded-xl shadow-lg" />
+            <img src="/images/2023/HBG_v2023.webp" alt="three winners from rcj go 2025" class="rounded-xl shadow-lg" />
             <p class="mt-4 text-sm text-gray-500 text-center max-w-xs">
               {{ $t('publications.mechanicsCaption') }}
             </p>
@@ -59,7 +59,7 @@
         <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-6 items-start">
           <!-- Image + Caption -->
           <div class="flex flex-col items-center">
-            <img src="/images/2023/robotronic-mainboard.jpg" alt="three winners from rcj go 2025" class="rounded-xl shadow-lg" />
+            <img src="/images/2023/robotronic-mainboard.webp" alt="three winners from rcj go 2025" class="rounded-xl shadow-lg" />
             <p class="mt-4 text-sm text-gray-500 text-center max-w-xs">
               {{ $t('publications.electronicsCaption') }}
             </p>
@@ -104,7 +104,7 @@
 
           <!-- Image + Caption -->
           <div class="flex flex-col items-center">
-            <img src="/images/softwareimage.jpg" alt="three winners from rcj go 2025" class="rounded-xl shadow-lg" />
+            <img src="/images/softwareimage.webp" alt="three winners from rcj go 2025" class="rounded-xl shadow-lg" />
             <p class="mt-4 text-sm text-gray-500 text-center max-w-xs">
               {{ $t('publications.softwareCaption') }}
             </p>
