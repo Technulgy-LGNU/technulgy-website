@@ -71,7 +71,11 @@
             <p class="text-base leading-relaxed">
               {{ $t('publications.electronicsText') }}
             </p>
-            <a href="https://github.com/Technulgy-LGNU/EAGLE-LIBARIES" class="hover:underline text-blue-700">OpenSource Libraries</a>
+            <ul class="mt-4 text-xl">
+              <li> - <a href="https://github.com/Technulgy-LGNU/EAGLE-LIBARIES" class="hover:underline text-blue-700">OpenSource Libraries</a></li>
+              <li> - <a href="https://github.com/Technulgy-LGNU/OpenSource-Electronics" class="hover:underline text-blue-700">OpenSource Electronics</a> </li>
+            </ul>
+
           </div>
         </div>
       </section>
@@ -89,6 +93,7 @@
             </p>
             <!-- List with OpenSource Software -->
             <ul class="mt-4 text-xl">
+              <li> - <a href="https://github.com/Technulgy-LGNU/OpenSource-Code" class="hover:underline text-blue-700">OpenSource Code</a> </li>
               <li> - <a href="https://github.com/Technulgy-LGNU/technulgy-website" class="hover:underline text-blue-700">Technulgy Website</a></li>
               <li> - <a href="https://github.com/Technulgy-LGNU/tas" class="hover:underline text-blue-700">Technulgy Admin Software</a> </li>
               <li> - <a href="https://github.com/Technulgy-LGNU/website" class="hover:underline text-blue-700">Old Website</a> </li>
