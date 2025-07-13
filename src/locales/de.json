@@ -53,7 +53,9 @@
     "titleSoftware": "Software",
     "softwareText": "Auch bei der Software wollen wir den anderen Teams helfen, indem wir unsere Software veröffentlichen. \nHier finden Sie alle unsere Software, die wir auf den Meisterschaften präsentieren.",
     "softwareText2": "All unsere Software ist unter der MIT License veröffentlicht. \nWenn Sie Fragen zu unserer Software haben, können Sie uns gerne kontaktieren. \n Zudem veröffentlichen wir jährlich den LaTeX Code unser Technical Description Papers, diese können Sie auf GitHub finden.",
-    "softwareCaption": "Von uns verwendete Software"
+    "softwareCaption": "Von uns verwendete Software",
+
+    "worldOpen": "Alle unseren Veröffentlichungen (Mechanics, Electronics, Software & Papers) für Weltmeisterschaft 2025 finden Sie unter diesen Links:"
   },
 
   "links": {

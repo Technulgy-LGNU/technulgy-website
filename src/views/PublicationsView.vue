@@ -1,4 +1,16 @@
 <script setup lang="ts">
+import WorldOpenComponent from '@/components/WorldOpenComponent.vue'
+import { onMounted, ref } from 'vue'
+
+const isWorldOpen = ref<boolean>(true)
+
+const showWorldOpen = ref<boolean>(false)
+
+onMounted(() => {
+  if (isWorldOpen.value) {
+    showWorldOpen.value = true
+  }
+})
 </script>
 
 <template>
@@ -116,6 +128,11 @@
           </div>
         </div>
       </section>
+
+      <WorldOpenComponent
+        v-if="showWorldOpen"
+        @close="showWorldOpen = false"
+      />
     </div>
   </div>
 </template>
