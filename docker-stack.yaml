@@ -1,14 +1,5 @@
 services:
   web:
     image: "ghcr.io/technulgy-lgnu/technulgy-website:${GIT_COMMIT_HASH:-latest}"
-    networks:
-      - traefik-nw
-    restart: always
-
-    deploy:
-      labels:
-      
-
-networks:
-  traefik-nw:
-    external: true
+    ports:
+      - "3009:80"
