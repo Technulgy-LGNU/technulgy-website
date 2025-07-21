@@ -2,7 +2,6 @@
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
 // import axios from 'axios'
 import { useI18n } from 'vue-i18n'
-import axios from 'axios'
 const { t } = useI18n()
 
 const videos = computed(() => [
@@ -60,13 +59,12 @@ const reset = () => {
 }
 
 const submit = async () => {
-  /*
   if (localStorage.getItem('lang') === 'de') {
     alert('Das Formular ist derzeit deaktiviert. Bitte kontaktieren Sie uns per E-Mail unter contact@technulgy.com')
   } else {
     alert('The Form is currently disabled. Please contact us via email at contact@technulgy.com')
   }
-  */
+  /*
   try {
     await axios
       .post('https://tas.technulgy.com/api/newForm', {
@@ -90,6 +88,7 @@ const submit = async () => {
     console.error('Error submitting form:', error)
     alert('An error occurred while submitting the form. Please try again later.')
   }
+  */
 }
 
 </script>
