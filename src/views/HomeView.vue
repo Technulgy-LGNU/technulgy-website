@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
-import axios from 'axios'
+// import axios from 'axios'
 import { useI18n } from 'vue-i18n'
 const { t } = useI18n()
 
@@ -18,11 +18,11 @@ const videos = computed(() => [
 ])
 
 const images = ref<string[]>([
-  '/images/standardIMG.jpg',
-  '/images/2025/2025-vo-picture-05.jpg',
-  '/images/2025/2025-vo-picture-06.jpg',
-  '/images/2025/2025-go-picture-002.jpg',
-  '/images/2025/2025-go-picture-036.jpg'
+  '/images/standardIMG.webp',
+  '/images/2025/2025-vo-picture-05.webp',
+  '/images/2025/2025-vo-picture-06.webp',
+  '/images/2025/2025-go-picture-002.webp',
+  '/images/2025/2025-go-picture-036.webp'
 ])
 const currentImage = ref<number>(0)
 const showBanner = ref<boolean>(true)
@@ -59,6 +59,12 @@ const reset = () => {
 }
 
 const submit = async () => {
+  if (localStorage.getItem('lang') === 'de') {
+    alert('Das Formular ist derzeit deaktiviert. Bitte kontaktieren Sie uns per E-Mail unter contact@technulgy.com')
+  } else {
+    alert('The Form is currently disabled. Please contact us via email at contact@technulgy.com')
+  }
+  /*
   try {
     await axios
       .post('https://tas.technulgy.com/api/newForm', {
@@ -82,6 +88,7 @@ const submit = async () => {
     console.error('Error submitting form:', error)
     alert('An error occurred while submitting the form. Please try again later.')
   }
+  */
 }
 
 </script>
@@ -108,7 +115,7 @@ const submit = async () => {
     <!-- Scroll Arrow -->
     <div @click="scrollDown" class="hover:cursor-pointer">
       <span class="absolute bottom-16 left-1/2 transform -translate-x-1/2 text-white text-xl">{{ $t('home.more') }}</span>
-      <svg xmlns="http://www.w3.org/2000/svg" class="absolute bottom-10 left-1/2 transform -translate-x-1/2 h-6 w-6 text-white mt-2 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <svg xmlns="http://www.w3.org/2000/svg" class="absolute bottom-10 left-1/2 transform -translate-x-1/2 h-6 w-6 text-white mt-2 animate-bounce" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
       </svg>
     </div>
@@ -131,7 +138,7 @@ const submit = async () => {
         <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-6 items-start">
           <!-- Image + Caption -->
           <div class="flex flex-col items-center">
-            <img src="/images/2025/2025-go-picture-100.jpg" alt="three winners from rcj go 2025" class="rounded-xl shadow-lg" />
+            <img src="/images/2025/2025-go-picture-100.webp" alt="three winners from rcj go 2025" class="rounded-xl shadow-lg" />
             <p class="mt-4 text-sm text-gray-500 text-center max-w-xs">
               {{ $t('home.germanOpenCaption') }}
             </p>
@@ -160,7 +167,7 @@ const submit = async () => {
           </div>
           <!-- Image + Caption -->
           <div class="flex flex-col items-center">
-            <img src="/images/2025/2025-vo-picture-42.jpg" alt="all teams RCJV 2025" class="rounded-xl shadow-lg" />
+            <img src="/images/2025/2025-vo-picture-42.webp" alt="all teams RCJV 2025" class="rounded-xl shadow-lg" />
             <p class="mt-4 text-sm text-gray-500 text-center max-w-xs">
               {{ $t('home.southOpenCaption') }}
             </p>

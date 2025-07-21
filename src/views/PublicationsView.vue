@@ -1,4 +1,16 @@
 <script setup lang="ts">
+import WorldOpenComponent from '@/components/WorldOpenComponent.vue'
+import { onMounted, ref } from 'vue'
+
+const isWorldOpen = ref<boolean>(true)
+
+const showWorldOpen = ref<boolean>(false)
+
+onMounted(() => {
+  if (isWorldOpen.value) {
+    showWorldOpen.value = true
+  }
+})
 </script>
 
 <template>
@@ -11,7 +23,7 @@
         <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-6 items-start">
           <!-- Image + Caption -->
           <div class="flex flex-col items-center">
-            <img src="/images/2024/teamFaabs-poster.jpg" alt="three winners from rcj go 2025" class="rounded-xl shadow-lg" />
+            <img src="/images/2024/teamFaabs-poster.webp" alt="three winners from rcj go 2025" class="rounded-xl shadow-lg" />
             <p class="mt-4 text-sm text-gray-500 text-center max-w-xs">
               {{ $t('publications.TDPCaption') }}
             </p>
@@ -44,7 +56,7 @@
 
           <!-- Image + Caption -->
           <div class="flex flex-col items-center">
-            <img src="/images/2023/HBG_v2023.jpg" alt="three winners from rcj go 2025" class="rounded-xl shadow-lg" />
+            <img src="/images/2023/HBG_v2023.webp" alt="three winners from rcj go 2025" class="rounded-xl shadow-lg" />
             <p class="mt-4 text-sm text-gray-500 text-center max-w-xs">
               {{ $t('publications.mechanicsCaption') }}
             </p>
@@ -59,7 +71,7 @@
         <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-6 items-start">
           <!-- Image + Caption -->
           <div class="flex flex-col items-center">
-            <img src="/images/2023/robotronic-mainboard.jpg" alt="three winners from rcj go 2025" class="rounded-xl shadow-lg" />
+            <img src="/images/2023/robotronic-mainboard.webp" alt="three winners from rcj go 2025" class="rounded-xl shadow-lg" />
             <p class="mt-4 text-sm text-gray-500 text-center max-w-xs">
               {{ $t('publications.electronicsCaption') }}
             </p>
@@ -71,7 +83,11 @@
             <p class="text-base leading-relaxed">
               {{ $t('publications.electronicsText') }}
             </p>
-            <a href="https://github.com/Technulgy-LGNU/EAGLE-LIBARIES" class="hover:underline text-blue-700">OpenSource Libraries</a>
+            <ul class="mt-4 text-xl">
+              <li> - <a href="https://github.com/Technulgy-LGNU/EAGLE-LIBARIES" class="hover:underline text-blue-700">OpenSource Libraries</a></li>
+              <li> - <a href="https://github.com/Technulgy-LGNU/OpenSource-Electronics" class="hover:underline text-blue-700">OpenSource Electronics</a> </li>
+            </ul>
+
           </div>
         </div>
       </section>
@@ -89,6 +105,7 @@
             </p>
             <!-- List with OpenSource Software -->
             <ul class="mt-4 text-xl">
+              <li> - <a href="https://github.com/Technulgy-LGNU/OpenSource-Code" class="hover:underline text-blue-700">OpenSource Code</a> </li>
               <li> - <a href="https://github.com/Technulgy-LGNU/technulgy-website" class="hover:underline text-blue-700">Technulgy Website</a></li>
               <li> - <a href="https://github.com/Technulgy-LGNU/tas" class="hover:underline text-blue-700">Technulgy Admin Software</a> </li>
               <li> - <a href="https://github.com/Technulgy-LGNU/website" class="hover:underline text-blue-700">Old Website</a> </li>
@@ -104,13 +121,18 @@
 
           <!-- Image + Caption -->
           <div class="flex flex-col items-center">
-            <img src="/images/softwareimage.jpg" alt="three winners from rcj go 2025" class="rounded-xl shadow-lg" />
+            <img src="/images/softwareimage.webp" alt="three winners from rcj go 2025" class="rounded-xl shadow-lg" />
             <p class="mt-4 text-sm text-gray-500 text-center max-w-xs">
               {{ $t('publications.softwareCaption') }}
             </p>
           </div>
         </div>
       </section>
+
+      <WorldOpenComponent
+        v-if="showWorldOpen"
+        @close="showWorldOpen = false"
+      />
     </div>
   </div>
 </template>

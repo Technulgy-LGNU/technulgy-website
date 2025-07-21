@@ -1,23 +1,5 @@
 services:
   web:
     image: "ghcr.io/technulgy-lgnu/technulgy-website:${GIT_COMMIT_HASH:-latest}"
-    networks:
-      - traefik-nw
-    restart: always
-
-    deploy:
-      placement:
-        constraints: [node.role == worker]
-      replicas: 2
-      labels:
-        - "traefik.enable=true"
-        - "traefik.http.services.web.loadbalancer.server.port=80"
-        - "traefik.http.routers.technulgy-website.rule=Host(`technulgy.com`)"
-        - "traefik.http.routers.technulgy-website.entrypoints=websecure"
-        - "traefik.http.routers.technulgy-website.tls=true"
-        - "traefik.http.routers.technulgy-website.tls.certresolver=cfACME"
-        - "traefik.http.routers.technulgy-website.middlewares=redirect-to-https"
-
-networks:
-  traefik-nw:
-    external: true
+    ports:
+      - "3009:80"
