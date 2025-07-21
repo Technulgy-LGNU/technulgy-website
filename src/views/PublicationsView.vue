@@ -2,7 +2,7 @@
 import WorldOpenComponent from '@/components/WorldOpenComponent.vue'
 import { onMounted, ref } from 'vue'
 
-const isWorldOpen = ref<boolean>(true)
+const isWorldOpen = ref<boolean>(false)
 
 const showWorldOpen = ref<boolean>(false)
 
