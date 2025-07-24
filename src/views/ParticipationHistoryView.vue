@@ -6,7 +6,7 @@ const { t } = useI18n()
 const history = computed(() => [
   {
     name: t('partHistory.wo'),
-    year: 2026,
+    year: 2025,
     location: t('partHistory.brazil'),
     awards: [
       { team: 'Team Faabs', title: t('teams.teamfaabs_wo2025') },
@@ -20,6 +20,7 @@ const history = computed(() => [
     images: [
       '/images/2025/2025-wo-onstage.webp',
       '/images/2025/2025-wo-teamfaabs.webp',
+      '/images/2025/2025-wo-teamfaabs_robot.webp'
     ]
   },
   {
@@ -102,7 +103,7 @@ const history = computed(() => [
             </div>
 
             <!-- IMAGES -->
-            <div v-if="event.images && event.images.length" class="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-4">
+            <div v-if="event.images && event.images.length" class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4">
               <img
                 v-for="(img, index) in event.images"
                 :key="index"
