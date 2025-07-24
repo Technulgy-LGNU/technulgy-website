@@ -16,6 +16,9 @@
     "about": "ABOUT US",
     "aboutText": "We are the robotics club of Lessing Gymnasium Neu-Ulm. \nWe develop, build and program robots for the international RoboCup Junior. \nThe RoboCup is an international organization whose goal is to beat humans in the sport of soccer by 2050. \nRoboCup Junior was created to raise awareness of RoboCup among young people, especially schoolchildren. \nHere, school teams from all over the world compete in various leagues, \nsuch as Soccer (robots play soccer against each other) or OnStage (students perform a play with robots). \nOur teams have been an integral part of RoboCup Junior since 2007 and have already won several world Opens.",
 
+    "worldOpen": "RoboCup Junior World Open 2025",
+    "worldOpenText": "The world Open 2025 in Brazil ended with great success for our teams. \n'Team Faabs' managed to win the third place in Soccer Open and get the OpenSource Award. \n'Team Mathimazierer' also made it to the podium and took third place in Soccer Lightweight. \n'Team Nuttellabroetchen' was able to win the OnStage league and thus take home the world champion title. \n'Team Robotronic' also participated in the Soccer Lightweight league and was able to win the SuperTeam award with 'Team Faabs'. \n'Team Mathemazierer' managed to achieve fourth place, which is incredible keeping in mind that this was their first time at a world open and they still have many things to learn and improve. \nThe real winners of this years world open is our OnStage Team 'Team Nuttelabrötchen'. After many disappointing and hard years they managed, thanks to the new members Lisa and Bahaa, to put a show on the stage which earned them the first place. They also got the firs place in the OnStage Superteam league and awards for the best poster and best performance. \nThe teams are now looking forward to the next season and are already preparing for the South Open 2026.",
+    "worldOpenCaption": "Team Faabs and Team Nuttellabroetchen at the World Open 2025 in Brazil",
     "germanOpen": "RoboCup Junior German Open 2025",
     "germanOpenText": "After the extremely successful participation in the Southern German Open 2025 in Vöhringen, our teams set off for the German Open\nmade their way to the 2025 German Opens in Nuremberg just three weeks later. Despite the short period of time between\nthe two Opens, “Team Faabs” still managed to build the second robot and solve major problems.\nsolve major problems. “Team Mathimazierer” also made further progress and was able to further optimize the robot.\nAt the German Open 2025, the teams once again gave their all and exchanged ideas with other teams from all over Germany.\n In addition to a demonstration for representatives from politics and many games against other teams, there was also a\n“Technical Challenge” in which the teams were able to present their robots and their programming.\nThe teams did very well again this year and were able to compete with the best teams from all over Germany.\nTeam Faabs took first place in the Soccer Open league and thus qualified for the 2025 World Cup in Brazil.\n The teams are now preparing for the 2025 World Open in Brazil and are looking forward to the new challenge.",
     "germanOpenCaption": "Our three winners of the German Open 2025 in Nuremberg",
@@ -77,7 +80,8 @@
     "inactive": "Former Teams",
 
     "teamfaabs": "Founded in 2019, Team Faabs participated for the first time in the Soccer LightWeight league in 2020. Their first success came in 2022 with the title of European Vice Champion in the Soccer LightWeight league. Since 2023 they are in the Soccer Open league and also won the World Open in 2023.",
-    "teamfaabs_go2025": "German Open 2025 - 1st place Soccer Open",
+    "teamfaabs_wo2025": "World Open 2025 - 3th place Soccer Open",
+    "teamfaabs_wo2025-op": "World Open 2025 - OpenSource Award Soccer Open",
     "teamfaabs_go2025-tc": "German Open 2025 - Technical Challenge Soccer Open",
     "teamfaabs_vo2025": "South German Open 2025 - 1st place Soccer Open",
     "teamfaabs_go2024": "German Open 2024 - 1st place Soccer Open",
@@ -91,6 +95,7 @@
     "teamfaabs_go2022": "German Open 2022 - 2nd place Soccer LightWeight",
 
     "mathimazierer": "Founded in 2022, Team Mathimazierer participated for the first time in the Soccer LightWeight Entry league in 2023, where they got the title of Vice European Champion. \nIn 2024 they moved to the Soccer LightWeight league and got their second Vice European Champion title.",
+    "mathimazierer_wo2025": "World Open 2025 - 14th place Soccer Lightweight",
     "mathimazierer_go2025": "German Open 2025 - 1st place Soccer Lightweight",
     "mathimazierer_vo2025": "South German Open 2025 - 1st place Soccer Lightweight",
     "mathimazierer_eo2024": "European Open 2024 - 3th place Soccer Lightweight",
@@ -101,6 +106,10 @@
     "mathimazierer_vo2023": "South German Open 2023 - 2nd place Soccer Lightweight Entry",
 
     "nuttellabroetchen": "The team Nuttellabroetchen was founded in 2022 and has been participating in the Onstage league since then and has already won several awards in this league.",
+    "nuttellabroetchen_wo2025": "World Open 2025 - 1st place OnStage",
+    "nuttellabroetchen_wo2025-st": "World Open 2025 - 1st place OnStage SuperTeam",
+    "nuttellabroetchen_wo2025-bp": "World Open 2025 - Best Poster OnStage",
+    "nuttellabroetchen_wo2025-bp2": "World Open 2025 - Best Performance OnStage",
     "nuttellabroetchen_go2025": "German Open 2025 - 1st place OnStage",
     "nuttellabroetchen_vo2025": "South German Open 2025 - 1st place OnStage",
     "nuttellabroetchen_eo2024": "European Open 2024 - 2nd place OnStage",

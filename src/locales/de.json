@@ -16,6 +16,10 @@
     "about": "ÜBER UNS",
     "aboutText": "Wir sind die Robotik AG des Lessing Gymnasium Neu-Ulm. Wir entwickeln, bauen und programmieren Roboter für den internationalen RoboCup Junior. Der RoboCup ist eine internationale Organisation, mit dem Ziel bis 2050 Menschen in der Sportart Fußball zu besiegen. Um bereits junge Menschen und insbesondere Schüler auf den RoboCup aufmerksam zu machen, wurde der RoboCup Junior ins Leben gerufen. Hier treten Schülerteams aus der ganzen Welt in verschiedenen Ligen, wie Soccer (Roboter spielen Fußball) oder OnStage (Schüler führen mit Robotern ein Theaterstück auf), an. Unsere Teams sind bereits seit 2007 ein fester Bestandteil des RoboCup Juniors und haben bereits mehrere Weltmeisterschaften gewonnen.",
 
+
+    "worldOpen": "RoboCup Junior Weltmeisterschaft 2025",
+    "worldOpenText": "Die Weltmeisterschaft 2025 in Brasilien ist zu Ende und war überaus erfolgreich für unsere 3 Teams. Das 'Team Faabs' wurde mit Ihrem neuen Roboter dritter Platz und konnte sich auch noch den OpenSource Award sichern. \n'Team Mathimazierer' waren auf Ihrer ersten Weltmeisterschaft und schafften sofort einen starken 4. Platz und bereiten sich jetzt mit den neuen Erfahrungen auf die nächsten Saison vor. \n'Team Nuttellabroetchen' konnte mit Ihren neuen Robotern und Performance ein Zeichen setzen und den ersten Platz für sich sichern. Außerdem haben sie noch die Superteam Challenge gewonnen und sich den Preis für das beste Poster und die beste Performance sichern. \nDie Teams haben sehr viel lernen können und neue Kontakte geknüpft und freuen sich jetzt auf eine kleine Pause bevor die Saison 2026 mit der Süddeutschen Meisterschaft Ende Februar startet.",
+    "worldOpenCaption": "Team Faabs and Team Nuttellabroetchen bei der Weltmeisterschaft 2025 in Brasilien",
     "germanOpen": "RoboCup Junior Deutsche Meisterschaft 2025",
     "germanOpenText": "Nach der überaus erfolgreichen Teilnahme an der Süddeutschen Meisterschaft 2025 in Vöhringen, machten sich unsere Teams\nbereits nach drei Wochen auf den Weg nach Nürnberg zur Deutschen Meisterschaft 2025. Trotz der kurzen Zeitspanne zwischen\nden Meisterschaften, schaffte es das \"Team Faabs\" den zweiten Roboter fertigzustellen und größere\nProbleme zu lösen. Das \"Team Mathimazierer\" hat sich ebenfalls weiterentwickelt und konnte den Roboter weiter optimieren.\nAuf der Deutschen Meisterschaft 2025 haben die Teams erneut alles gegeben und sich mit anderen Teams aus ganz Deutschland\nausgetauscht. Neben einer Vorführung für Vertreter aus der Politik und vielen Spielen gegen andere Teams, gab es auch eine\n\"Technical Challenge\" in welcher die Teams ihre Roboter und deren Programmierung vorstellen konnten.\nAuch in diesem Jahr haben sich die Teams wieder sehr gut geschlagen und konnten sich mit den besten Teams aus ganz Deutschland messen.\n\"Team Faabs\" hat den ersten Platz in der Liga Soccer Open belegt und sich somit für die Weltmeisterschaft 2025 in Brasilien qualifiziert.\nEbenfalls mit dem ersten Platz in der Liga Soccer Lightweight hat sich das \"Team Mathimazierer\" für die Weltmeisterschaft qualifiziert.\nDas \"Team Nuttellabroetchen\"  belegte den ersten Platz in der Liga OnStage und qualifizierte sich somit ebenfalls für die Weltmeisterschaft.\nDie Teams bereiten sich nun auf die Weltmeisterschaft 2025 in Brasilien vor und freuen sich auf die neue Herausforderung.",
     "germanOpenCaption": "Unsere drei Sieger der Deutschen Meisterschaft 2025 in Nürnberg",
@@ -77,6 +81,8 @@
     "inactive": "Ehemalige Teams",
 
     "teamfaabs": "Gegründet in 2019 nahm das Team Faabs 2020 zum ersten mal in der Liga Soccer LightWeight teil. Den ersten Erfolg hatten Sie 2022 mit dem Titel des Europäischen Vize Meisters in der Liga Soccer LightWeight. Seit 2023 sind Sie in der Liga Soccer Open und gewannen 2023 die Weltmeisterschaft",
+    "teamfaabs_wo2025": "Weltmeisterschaft 2025 - 3. Platz Soccer Open",
+    "teamfaabs_wo2025-op": "Weltmeisterschaft 2025 - OpenSource Award Soccer Open",
     "teamfaabs_go2025": "Deutsche Meisterschaft 2025 - 1. Platz Soccer Open",
     "teamfaabs_go2025-tc": "Deutsche Meisterschaft 2025 - Technical Challenge Soccer Open",
     "teamfaabs_vo2025": "Süddeutsche Meisterschaft 2025 - 1. Platz Soccer Open",
@@ -91,6 +97,7 @@
     "teamfaabs_go2022": "Deutsche Meisterschaft 2022 - 2. Platz Soccer LightWeight",
 
     "mathimazierer": "Gegründet in 2022 nahm das Team Mathimazierer 2023 zum ersten Mal in der Liga Soccer LightWeight Entry teil. Dort erhielten sie den Titel des Vize-Europameisters. 2024 wechselten sie in die Liga Soccer LightWeight und erhielten ihren zweiten Vize-Europameistertitel.",
+    "mathimazierer_wo2025": "Weltmeisterschaft 2025 - 4. Platz Soccer Lightweight",
     "mathimazierer_go2025": "Deutsche Meisterschaft 2025 - 1. Platz Soccer Lightweight",
     "mathimazierer_go2025-st": "Deutsche Meisterschaft 2025 - 1. Platz Superteam Soccer Lightweight",
     "mathimazierer_vo2025": "Süddeutsche Meisterschaft 2025 - 1. Platz Soccer Lightweight",
@@ -101,8 +108,11 @@
     "mathimazierer_go2023": "Deutsche Meisterschaft 2023 - 3. Platz Soccer Lightweight Entry",
     "mathimazierer_vo2023": "Süddeutsche Meisterschaft 2023 - 2. Platz Soccer Lightweight Entry",
 
-
     "nuttellabroetchen": "Das Team Nuttellabroetchen wurde 2022 gegründet und nimmt seitdem in der Liga Onstage Teil und hat in dieser bereits mehrere Preis gewonnen.",
+    "nuttellabroetchen_wo2025": "Weltmeisterschaft 2025 - 1. Platz OnStage",
+    "nuttellabroetchen_wo2025-st": "Weltmeisterschaft 2025 - 1. Platz Superteam OnStage",
+    "nuttellabroetchen_wo2025-bp": "Weltmeisterschaft 2025 - Best Poster OnStage",
+    "nuttellabroetchen_wo2025-bp2": "Weltmeisterschaft 2025 - Best Performance OnStage",
     "nuttellabroetchen_go2025": "Deutsche Meisterschaft 2025 - 1. Platz OnStage",
     "nuttellabroetchen_vo2025": "Süddeutsche Meisterschaft 2025 - 1. Platz OnStage",
     "nuttellabroetchen_eo2024": "Europäische Meisterschaft 2024 - 2. Platz OnStage",

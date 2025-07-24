@@ -9,6 +9,8 @@ const teamsActive = computed(() => [
     description: t('teams.teamfaabs'),
     image: '/images/teams/team-faabs.webp',
     awards: [
+      t('teams.teamfaabs_wo2025'),
+      t('teams.teamfaabs_wo2025-op'),
       t('teams.teamfaabs_go2025'),
       t('teams.teamfaabs_go2025-tc'),
       t('teams.teamfaabs_vo2025'),
@@ -28,6 +30,7 @@ const teamsActive = computed(() => [
     description: t('teams.mathimazierer'),
     image: '/images/teams/team-mathemazierer.webp',
     awards: [
+      t('teams.mathimazierer_wo2025'),
       t('teams.mathimazierer_go2025'),
       t('teams.mathimazierer_go2025-st'),
       t('teams.mathimazierer_vo2025'),
@@ -44,6 +47,10 @@ const teamsActive = computed(() => [
     description: t('teams.nuttellabroetchen'),
     image: '/images/teams/team-nuttellabroetchen.webp',
     awards: [
+      t('teams.nuttellabroetchen_wo2025'),
+      t('teams.nuttellabroetchen_wo2025-st'),
+      t('teams.nuttellabroetchen_wo2025-bp'),
+      t('teams.nuttellabroetchen_wo2025-bp2'),
       t('teams.nuttellabroetchen_go2025'),
       t('teams.nuttellabroetchen_vo2025'),
       t('teams.nuttellabroetchen_eo2024'),
@@ -101,7 +108,7 @@ const teamsInactive = computed(() => [
       </div>
     </div>
     <div class="max-w-7xl mx-auto">
-      <h1 class="text-3xl md:text-4xl font-bold text-center mb-12">{{ t('teams.inactive') }}</h1>
+      <h1 class="text-3xl md:text-4xl font-bold text-center mb-5 mt-12">{{ t('teams.inactive') }}</h1>
 
       <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
         <div
