@@ -5,6 +5,25 @@ const { t } = useI18n()
 
 const history = computed(() => [
   {
+    name: t('partHistory.wo'),
+    year: 2025,
+    location: t('partHistory.brazil'),
+    awards: [
+      { team: 'Team Faabs', title: t('teams.teamfaabs_wo2025') },
+      { team: 'Team Faabs', title: t('teams.teamfaabs_wo2025-op') },
+      { team: 'Team Mathimazierer', title: t('teams.mathimazierer_wo2025')},
+      { team: 'Team Nuttellabroetchen', title: t('teams.nuttellabroetchen_wo2025')},
+      { team: 'Team Nuttellabroetchen', title: t('teams.nuttellabroetchen_wo2025-st')},
+      { team: 'Team Nuttellabroetchen', title: t('teams.nuttellabroetchen_wo2025-bp')},
+      { team: 'Team Nuttellabroetchen', title: t('teams.nuttellabroetchen_wo2025-bp2')}
+    ],
+    images: [
+      '/images/2025/2025-wo-onstage.webp',
+      '/images/2025/2025-wo-teamfaabs.webp',
+      '/images/2025/2025-wo-teamfaabs_robot.webp'
+    ]
+  },
+  {
     name: t('partHistory.go'),
     year: 2025,
     location: t('partHistory.nuremberg'),
@@ -84,13 +103,13 @@ const history = computed(() => [
             </div>
 
             <!-- IMAGES -->
-            <div v-if="event.images && event.images.length" class="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-4">
+            <div v-if="event.images && event.images.length" class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4">
               <img
                 v-for="(img, index) in event.images"
                 :key="index"
                 :src="img"
                 alt="Event image"
-                class="rounded-lg shadow object-cover h-40 w-full"
+                class="rounded-lg shadow object-cover h-75 w-full"
               />
             </div>
           </div>

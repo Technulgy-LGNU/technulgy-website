@@ -132,6 +132,27 @@ const submit = async () => {
         </div>
       </section>
     </div>
+    <!-- World Open 2025 -->
+    <div>
+      <section class="min-h-[60vh] bg-white py-10 px-4 md:px-16">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-6 items-start">
+          <!-- Text -->
+          <div>
+            <h3 class="text-2xl font-semibold mb-2">{{ $t('home.worldOpen') }}</h3>
+            <p class="text-base leading-relaxed">
+              {{ $t('home.worldOpenText') }}
+            </p>
+          </div>
+          <!-- Image + Caption -->
+          <div class="flex flex-col items-center">
+            <img src="/images/2025/2025-wo-onstage&open.webp" alt="team faabs and onstage world open 2025" class="rounded-xl shadow-lg" />
+            <p class="mt-4 text-sm text-gray-500 text-center max-w-xs">
+              {{ $t('home.worldOpenCaption') }}
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
     <!-- German Open 2025 -->
     <div>
       <section class="min-h-[60vh] bg-white py-10 px-4 md:px-16">
