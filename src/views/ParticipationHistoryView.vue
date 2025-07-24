@@ -5,6 +5,24 @@ const { t } = useI18n()
 
 const history = computed(() => [
   {
+    name: t('partHistory.wo'),
+    year: 2026,
+    location: t('partHistory.brazil'),
+    awards: [
+      { team: 'Team Faabs', title: t('teams.teamfaabs_wo2025') },
+      { team: 'Team Faabs', title: t('teams.teamfaabs_wo2025-op') },
+      { team: 'Team Mathimazierer', title: t('teams.mathimazierer_wo2025')},
+      { team: 'Team Nuttellabroetchen', title: t('teams.nuttellabroetchen_wo2025')},
+      { team: 'Team Nuttellabroetchen', title: t('teams.nuttellabroetchen_wo2025-st')},
+      { team: 'Team Nuttellabroetchen', title: t('teams.nuttellabroetchen_wo2025-bp')},
+      { team: 'Team Nuttellabroetchen', title: t('teams.nuttellabroetchen_wo2025-bp2')}
+    ],
+    images: [
+      '/images/2025/2025-wo-onstage.webp',
+      '/images/2025/2025-wo-teamfaabs.webp',
+    ]
+  },
+  {
     name: t('partHistory.go'),
     year: 2025,
     location: t('partHistory.nuremberg'),
@@ -90,7 +108,7 @@ const history = computed(() => [
                 :key="index"
                 :src="img"
                 alt="Event image"
-                class="rounded-lg shadow object-cover h-40 w-full"
+                class="rounded-lg shadow object-cover h-75 w-full"
               />
             </div>
           </div>
