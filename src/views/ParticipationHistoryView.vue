@@ -5,23 +5,50 @@ const { t } = useI18n()
 
 const history = computed(() => [
   {
+    name: t('partHistory.go'),
+    year: 2026,
+    location: t('partHistory.cologne'),
+    awards: [
+      { team: 'Team Faabs', title: t('teams.teamfaabs_vo2026') },
+      { team: 'Team Mathimazierer', title: t('teams.mathimazierer_vo2026') },
+      { team: 'Die Sauren  Glühwurmchen', title: t('teams.dsg_go2026') },
+    ],
+    images: [],
+  },
+  {
+    name: t('partHistory.vo'),
+    year: 2026,
+    location: 'Vöhringen',
+    awards: [
+      { team: 'Team Faabs', title: t('teams.teamfaabs_vo2026') },
+      { team: 'Team Mathimazierer', title: t('teams.mathimazierer_vo2026') },
+      { team: 'Die Sauren  Glühwurmchen', title: t('teams.dsg_vo2026') },
+      { team: 'Robochamps', title: t('teams.robochamps_vo2026') },
+    ],
+    images: [
+      '/images/2026/2026-vo-lgnuall.webp',
+      '/images/2026/2026-vo-picture-006.webp',
+      '/images/2026/2026-vo-picture-021.webp',
+    ],
+  },
+  {
     name: t('partHistory.wo'),
     year: 2025,
     location: t('partHistory.brazil'),
     awards: [
       { team: 'Team Faabs', title: t('teams.teamfaabs_wo2025') },
       { team: 'Team Faabs', title: t('teams.teamfaabs_wo2025-op') },
-      { team: 'Team Mathimazierer', title: t('teams.mathimazierer_wo2025')},
-      { team: 'Team Nuttellabroetchen', title: t('teams.nuttellabroetchen_wo2025')},
-      { team: 'Team Nuttellabroetchen', title: t('teams.nuttellabroetchen_wo2025-st')},
-      { team: 'Team Nuttellabroetchen', title: t('teams.nuttellabroetchen_wo2025-bp')},
-      { team: 'Team Nuttellabroetchen', title: t('teams.nuttellabroetchen_wo2025-bp2')}
+      { team: 'Team Mathimazierer', title: t('teams.mathimazierer_wo2025') },
+      { team: 'Team Nuttellabroetchen', title: t('teams.nuttellabroetchen_wo2025') },
+      { team: 'Team Nuttellabroetchen', title: t('teams.nuttellabroetchen_wo2025-st') },
+      { team: 'Team Nuttellabroetchen', title: t('teams.nuttellabroetchen_wo2025-bp') },
+      { team: 'Team Nuttellabroetchen', title: t('teams.nuttellabroetchen_wo2025-bp2') },
     ],
     images: [
       '/images/2025/2025-wo-onstage.webp',
       '/images/2025/2025-wo-teamfaabs.webp',
-      '/images/2025/2025-wo-teamfaabs_robot.webp'
-    ]
+      '/images/2025/2025-wo-teamfaabs_robot.webp',
+    ],
   },
   {
     name: t('partHistory.go'),
@@ -30,14 +57,14 @@ const history = computed(() => [
     awards: [
       { team: 'Team Faabs', title: t('teams.teamfaabs_go2025') },
       { team: 'Team Faabs', title: t('teams.teamfaabs_go2025-tc') },
-      { team: 'Team Mathimazierer', title: t('teams.mathimazierer_go2025')},
-      { team: 'Team Nuttellabroetchen', title: t('teams.nuttellabroetchen_go2025')}
+      { team: 'Team Mathimazierer', title: t('teams.mathimazierer_go2025') },
+      { team: 'Team Nuttellabroetchen', title: t('teams.nuttellabroetchen_go2025') },
     ],
     images: [
       '/images/2025/2025-go-picture-100.webp',
       '/images/2025/2025-go-picture-002.webp',
-      '/images/2025/2025-go-picture-036.webp'
-    ]
+      '/images/2025/2025-go-picture-036.webp',
+    ],
   },
   {
     name: t('partHistory.vo'),
@@ -45,79 +72,79 @@ const history = computed(() => [
     location: 'Vöhringen',
     awards: [
       { team: 'Team Faabs', title: t('teams.teamfaabs_vo2025') },
-      { team: 'Team Mathimazierer', title: t('teams.mathimazierer_vo2025')},
-      { team: 'Team Nuttellabroetchen', title: t('teams.nuttellabroetchen_vo2025')}
+      { team: 'Team Mathimazierer', title: t('teams.mathimazierer_vo2025') },
+      { team: 'Team Nuttellabroetchen', title: t('teams.nuttellabroetchen_vo2025') },
     ],
     images: [
       '/images/2025/2025-vo-picture-42.webp',
       '/images/2025/2025-vo-picture-05.webp',
-      '/images/2025/2025-vo-picture-06.webp'
-    ]
+      '/images/2025/2025-vo-picture-06.webp',
+    ],
   },
   {
     name: t('partHistory.wo'),
     year: 2023,
-    location: "Bordeaux (France)",
+    location: 'Bordeaux (France)',
     awards: [
       { team: 'Team Faabs', title: t('teams.teamfaabs_wo2023') },
       { team: 'Team Faabs', title: t('teams.teamfaabs_wo2023-ad') },
-      { team: 'Team Robotronic', title: t('teams.robotronic_wo2023-st') }
+      { team: 'Team Robotronic', title: t('teams.robotronic_wo2023-st') },
     ],
     images: [
       '/images/2023/LGNU-WorldOpen.webp',
       '/images/2023/RoboCupBordeaux-Logo.jpeg',
-      '/images/2023/RoboCup-WM.webp'
-    ]
-  }
+      '/images/2023/RoboCup-WM.webp',
+    ],
+  },
 ])
 </script>
 
 <template>
-    <section class="bg-white py-12 px-4 md:px-16 text-gray-800">
-      <div class="max-w-6xl mx-auto">
-        <h1 class="text-3xl md:text-4xl font-bold text-center mb-10">{{ t('partHistory.title') }}</h1>
+  <section class="bg-white py-12 px-4 md:px-16 text-gray-800">
+    <div class="max-w-6xl mx-auto">
+      <h1 class="text-3xl md:text-4xl font-bold text-center mb-10">{{ t('partHistory.title') }}</h1>
 
-        <div class="space-y-10">
+      <div class="space-y-10">
+        <div
+          v-for="event in history"
+          :key="event.name"
+          class="border rounded-xl shadow-sm hover:shadow-md transition p-6"
+        >
+          <div class="mb-4">
+            <h2 class="text-xl font-semibold">
+              {{ event.name }} <span class="text-gray-500">({{ event.year }})</span>
+            </h2>
+            <p class="text-sm text-gray-600">{{ event.location }}</p>
+          </div>
+
+          <!-- AWARDS -->
+          <div class="mb-4">
+            <h3 class="font-medium mb-1">{{ t('teams.awards') }}:</h3>
+            <ul class="list-disc list-inside text-sm text-gray-700">
+              <li v-for="award in event.awards" :key="award.team" class="mb-1">
+                <strong>{{ award.team }}</strong
+                >: {{ award.title }}
+              </li>
+            </ul>
+          </div>
+
+          <!-- IMAGES -->
           <div
-            v-for="event in history"
-            :key="event.name"
-            class="border rounded-xl shadow-sm hover:shadow-md transition p-6"
+            v-if="event.images && event.images.length"
+            class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4"
           >
-            <div class="mb-4">
-              <h2 class="text-xl font-semibold">{{ event.name }} <span class="text-gray-500">({{ event.year }})</span></h2>
-              <p class="text-sm text-gray-600">{{ event.location }}</p>
-            </div>
-
-            <!-- AWARDS -->
-            <div class="mb-4">
-              <h3 class="font-medium mb-1">{{ t('teams.awards') }}:</h3>
-              <ul class="list-disc list-inside text-sm text-gray-700">
-                <li
-                  v-for="award in event.awards"
-                  :key="award.team"
-                  class="mb-1"
-                >
-                  <strong>{{ award.team }}</strong>: {{ award.title }}
-                </li>
-              </ul>
-            </div>
-
-            <!-- IMAGES -->
-            <div v-if="event.images && event.images.length" class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4">
-              <img
-                v-for="(img, index) in event.images"
-                :key="index"
-                :src="img"
-                alt="Event image"
-                class="rounded-lg shadow object-cover h-75 w-full"
-              />
-            </div>
+            <img
+              v-for="(img, index) in event.images"
+              :key="index"
+              :src="img"
+              alt="Event image"
+              class="rounded-lg shadow object-cover h-75 w-full"
+            />
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

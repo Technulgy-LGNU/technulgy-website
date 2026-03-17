@@ -80,7 +80,10 @@
     "active": "Aktive Teams",
     "inactive": "Ehemalige Teams",
 
-    "teamfaabs": "Gegründet in 2019 nahm das Team Faabs 2020 zum ersten mal in der Liga Soccer LightWeight teil. Den ersten Erfolg hatten Sie 2022 mit dem Titel des Europäischen Vize Meisters in der Liga Soccer LightWeight. Seit 2023 sind Sie in der Liga Soccer Open und gewannen 2023 die Weltmeisterschaft",
+    "teamfaabs": "Gegründet in 2019 nahm das Team Faabs 2020 zum ersten mal in der Liga Soccer LightWeight (mittlerweile Soccer Infrared) teil. Den ersten Erfolg hatten Sie 2022 mit dem Titel des Europäischen Vize Meisters in der Liga Soccer LightWeight. Seit 2023 sind Sie in der Liga Soccer Open (mittlerweile Soccer Vision) und gewannen 2023 die Weltmeisterschaft",
+    "teamfaabs_go2026-st": "Deutsche Meisterschaft 2026 - 1. Platz Superteam Soccer Vision",
+    "teamfaabs_go2026": "Deutsche Meisterschaft 2026 - 3. Platz Soccer Vision",
+    "teamfaabs_vo2026": "Süddeutsche Meisterschaft 2026 - 1. Platz Soccer Vision",
     "teamfaabs_wo2025": "Weltmeisterschaft 2025 - 3. Platz Soccer Open",
     "teamfaabs_wo2025-op": "Weltmeisterschaft 2025 - OpenSource Award Soccer Open",
     "teamfaabs_go2025": "Deutsche Meisterschaft 2025 - 1. Platz Soccer Open",
@@ -96,7 +99,10 @@
     "teamfaabs_eo2022": "Europäische Meisterschaft 2022 - 2. Platz Soccer LightWeight",
     "teamfaabs_go2022": "Deutsche Meisterschaft 2022 - 2. Platz Soccer LightWeight",
 
-    "mathimazierer": "Gegründet in 2022 nahm das Team Mathimazierer 2023 zum ersten Mal in der Liga Soccer LightWeight Entry teil. Dort erhielten sie den Titel des Vize-Europameisters. 2024 wechselten sie in die Liga Soccer LightWeight und erhielten ihren zweiten Vize-Europameistertitel.",
+    "mathimazierer": "Gegründet in 2022 nahm das Team Mathimazierer 2023 zum ersten Mal in der Liga Soccer LightWeight Entry teil. Dort erhielten sie den Titel des Vize-Europameisters. 2024 wechselten sie in die Liga Soccer LightWeight (mittlerweile Soccer Infrared) und erhielten ihren zweiten Vize-Europameistertitel.",
+    "mathimazierer_go2026-st": "Deutsche Meisterschaft 2026 - 1. Platz Superteam Soccer Infrared",
+    "mathimazierer_go2026": "Deutsche Meisterschaft 2026 - 1. Platz Soccer Infrared",
+    "mathimazierer_vo2026": "Süddeutsche Meisterschaft 2026 - 1. Platz Soccer Infrared",
     "mathimazierer_wo2025": "Weltmeisterschaft 2025 - 4. Platz Soccer Lightweight",
     "mathimazierer_go2025": "Deutsche Meisterschaft 2025 - 1. Platz Soccer Lightweight",
     "mathimazierer_go2025-st": "Deutsche Meisterschaft 2025 - 1. Platz Superteam Soccer Lightweight",
@@ -129,7 +135,17 @@
     "robotronic_go2023": "Deutsche Meisterschaft 2023 - 1. Platz Soccer Lightweight",
     "robotronic_go2023-st": "Deutsche Meisterschaft 2023 - 1. Platz Soccer Lightweight SuperTeam",
     "robotronic_vo2023": "Süddeutsche Meisterschaft 2023 - 2. Platz Soccer Lightweight",
-    "robotronic_vo2019": "Süddeutsche Meisterschaft 2019 - 3. Platz Soccer Entry"
+    "robotronic_vo2019": "Süddeutsche Meisterschaft 2019 - 3. Platz Soccer Entry",
+
+    "robochip": "Das Team Robochip ist unser Nachfolger Soccer Vision Team und um die ersten Erfahrungen zu sammeln, nahmen Sie bereits im letzten Jahr von Team Faabs teil und konnten somit einige wichtige Erfahrungen sammeln.",
+    "robochip_vo2026": "Süddeutsche Meisterschaft 2026 - 2. Platz Soccer Vision",
+
+    "dsg": "Das Team Die Sauren Glühwürmchen sind unser neues OnStage Entry Team und nimmt aktuell in der Onstate Entry Liga teil.",
+    "dsg_go2026": "Deutsche Meisterschaft 2026 - 2. Platz Superteam OnStage Entry",
+    "dsg_vo2026": "Süddeutsche Meisterschaft 2026 - 1. Platz OnStage Entry",
+
+    "robochamps": "Das Team Robochamps nahm 2026 zum ersten mal teil und zwar in der Liga Rescue Line Entry.",
+    "robochamps_vo2026": "Süddeutsche Meisterschaft 2026 - 1. Platz Rescue Line Entry"
   },
 
   "partHistory": {
@@ -139,6 +155,7 @@
     "wo": "Weltmeisterschaft",
     "eo": "Europäische Meisterschaft",
     "nuremberg": "Nürnberg",
-    "brazil": "Brasilien"
+    "brazil": "Brasilien",
+    "cologne": "Köln"
   }
 }

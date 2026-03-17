@@ -79,7 +79,10 @@
     "active": "Active Teams",
     "inactive": "Former Teams",
 
-    "teamfaabs": "Founded in 2019, Team Faabs participated for the first time in the Soccer LightWeight league in 2020. Their first success came in 2022 with the title of European Vice Champion in the Soccer LightWeight league. Since 2023 they are in the Soccer Open league and also won the World Open in 2023.",
+    "teamfaabs": "Founded in 2019, Team Faabs participated for the first time in the Soccer LightWeight league (now Soccer Infrared) in 2020. Their first success came in 2022 with the title of European Vice Champion in the Soccer LightWeight league. Since 2023 they are in the Soccer Open league (now Soccer Vision) and also won the World Open in 2023.",
+    "teamfaabs_go2026-st": "German Open 2026 - 1st place Superteam Soccer Vision",
+    "teamfaabs_go2026": "German Open 2026 - 3th place Soccer Vision",
+    "teamfaabs_vo2026": "South German Open 2026 - 1st place Soccer Vision",
     "teamfaabs_wo2025": "World Open 2025 - 3th place Soccer Open",
     "teamfaabs_wo2025-op": "World Open 2025 - OpenSource Award Soccer Open",
     "teamfaabs_go2025": "German Open 2025 - 1st place Soccer Open",
@@ -95,7 +98,10 @@
     "teamfaabs_eo2022": "European Open 2022 - 2nd place Soccer LightWeight",
     "teamfaabs_go2022": "German Open 2022 - 2nd place Soccer LightWeight",
 
-    "mathimazierer": "Founded in 2022, Team Mathimazierer participated for the first time in the Soccer LightWeight Entry league in 2023, where they got the title of Vice European Champion. In 2024 they moved to the Soccer LightWeight league and got their second Vice European Champion title.",
+    "mathimazierer": "Founded in 2022, Team Mathimazierer participated for the first time in the Soccer LightWeight Entry league in 2023, where they got the title of Vice European Champion. In 2024 they moved to the Soccer LightWeight league (now Soccer Infrared) and got their second Vice European Champion title.",
+    "mathimazierer_go2026-st": "German Open 2026 - 1st place Superteam Soccer Infrared",
+    "mathimazierer_go2026": "German Open 2026 - 1nd place Soccer Infrared",
+    "mathimazierer_vo2026": "South German Open 2026 - 1st place Soccer Infrared",
     "mathimazierer_wo2025": "World Open 2025 - 4th place Soccer Lightweight",
     "mathimazierer_go2025": "German Open 2025 - 1st place Soccer Lightweight",
     "mathimazierer_go2025-st": "German Open 2025 - 1st place Soccer Lightweight SuperTeam",
@@ -128,7 +134,17 @@
     "robotronic_go2023": "German Open 2023 - 1st place Soccer Lightweight",
     "robotronic_go2023-st": "German Open 2023 - 1st place Soccer Lightweight SuperTeam",
     "robotronic_vo2023": "South German Open 2023 - 2nd place Soccer Lightweight",
-    "robotronic_vo2019": "South German Open 2019 - 3rd place Soccer Entry"
+    "robotronic_vo2019": "South German Open 2019 - 3rd place Soccer Entry",
+
+    "robochip": "The team Robochip are going to be successors of team faabs, after they have their last year in 2026. To gather experience and prepare for the next season, they already participated in 2026 together with Team Faabs in the Soccer Vision League.",
+    "robochip_vo2026": "South German Open 2026 - 2nd place Soccer Vision",
+
+    "dsg": "The team 'Die Sauren Glühwurmchen' are our new Onstage Team, currently competing in the Onstage Entry category",
+    "dsg_go2026": "German Open 2026 - 2nd place OnStage Entry",
+    "dsg_vo2026": "South German Open 2026 - 1st place OnStage Entry",
+
+    "robochamps": "The team Robochamps is competing in the Rescue Line Entry Category for the 2026 season.",
+    "robochamps_vo2026": "South German Open 2026 - 1st place Rescue Line Entry"
   },
 
   "partHistory": {
@@ -138,6 +154,7 @@
     "wo": "World Open",
     "eo": "European Open",
     "nuremberg": "Nuremberg",
-    "brazil": "Brazil"
+    "brazil": "Brazil",
+    "cologne": "Cologne"
   }
 }
