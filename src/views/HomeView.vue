@@ -14,7 +14,7 @@ const videos = computed(() => [
     id: '1uGySXI9IYg',
     title: t('home.video_eo2022'),
     description: t('home.video_eo2022-description'),
-  }
+  },
 ])
 
 const images = ref<string[]>([
@@ -22,7 +22,7 @@ const images = ref<string[]>([
   '/images/2025/2025-vo-picture-05.webp',
   '/images/2025/2025-vo-picture-06.webp',
   '/images/2025/2025-go-picture-002.webp',
-  '/images/2025/2025-go-picture-036.webp'
+  '/images/2025/2025-go-picture-036.webp',
 ])
 const currentImage = ref<number>(0)
 const showBanner = ref<boolean>(true)
@@ -44,7 +44,7 @@ onBeforeUnmount(() => {
 const scrollDown = () => {
   infoSection.value?.scrollIntoView({
     behavior: 'smooth',
-    block: 'start'
+    block: 'start',
   })
 }
 
@@ -60,7 +60,9 @@ const reset = () => {
 
 const submit = async () => {
   if (localStorage.getItem('lang') === 'de') {
-    alert('Das Formular ist derzeit deaktiviert. Bitte kontaktieren Sie uns per E-Mail unter contact@technulgy.com')
+    alert(
+      'Das Formular ist derzeit deaktiviert. Bitte kontaktieren Sie uns per E-Mail unter contact@technulgy.com',
+    )
   } else {
     alert('The Form is currently disabled. Please contact us via email at contact@technulgy.com')
   }
@@ -90,7 +92,6 @@ const submit = async () => {
   }
   */
 }
-
 </script>
 
 <template>
@@ -100,7 +101,10 @@ const submit = async () => {
       <div
         v-for="(image, index) in images"
         :key="index"
-        :class="['absolute inset-0 transition-opacity duration-2000 ease-in-out', { 'opacity-100': currentImage === index, 'opacity-0': currentImage !== index }]"
+        :class="[
+          'absolute inset-0 transition-opacity duration-2000 ease-in-out',
+          { 'opacity-100': currentImage === index, 'opacity-0': currentImage !== index },
+        ]"
         :style="`background-image: url(${image}); background-size: cover; background-position: center center;`"
       ></div>
     </div>
@@ -108,15 +112,28 @@ const submit = async () => {
     <!-- Technulgy Banner -->
     <div
       v-if="showBanner"
-      class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-4xl md:text-6xl font-bold animate-fade-in">
+      class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-4xl md:text-6xl font-bold animate-fade-in"
+    >
       TECHNULGY
     </div>
 
     <!-- Scroll Arrow -->
     <div @click="scrollDown" class="hover:cursor-pointer">
-      <span class="absolute bottom-16 left-1/2 transform -translate-x-1/2 text-white text-xl">{{ $t('home.more') }}</span>
-      <svg xmlns="http://www.w3.org/2000/svg" class="absolute bottom-10 left-1/2 transform -translate-x-1/2 h-6 w-6 text-white mt-2 animate-bounce" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+      <span class="absolute bottom-16 left-1/2 transform -translate-x-1/2 text-white text-xl">{{
+        $t('home.more')
+      }}</span>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="absolute bottom-10 left-1/2 transform -translate-x-1/2 h-6 w-6 text-white mt-2 animate-bounce"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M19 9l-7 7-7-7"
+        ></path>
       </svg>
     </div>
   </div>
@@ -129,6 +146,52 @@ const submit = async () => {
           <p class="text-lg leading-relaxed">
             {{ $t('home.aboutText') }}
           </p>
+        </div>
+      </section>
+    </div>
+    <!-- German Open 2026 -->
+    <div>
+      <section class="min-h-[60vh] bg-white py-10 px-4 md:px-16">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-6 items-start">
+          <!-- Image + Caption -->
+          <div class="flex flex-col items-center">
+            <img src="" alt="three winners from rcj go 2025" class="rounded-xl shadow-lg" />
+            <p class="mt-4 text-sm text-gray-500 text-center max-w-xs">
+              {{ $t('home.germanOpenCaption') }}
+            </p>
+          </div>
+          <!-- Text -->
+          <div>
+            <h3 class="text-2xl font-semibold mb-2">{{ $t('home.germanOpen') }}</h3>
+            <p class="text-base leading-relaxed">
+              {{ $t('home.germanOpenText') }}
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- South Open 2026 -->
+    <div>
+      <section class="min-h-[60vh] bg-gray-50 py-10 px-4 md:px-16">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-6 items-start">
+          <!-- Image + Caption -->
+          <div class="flex flex-col items-center">
+            <img
+              src="/images/2026/2026-vo-lgnuall.webp"
+              alt="all teams RCJV 2026"
+              class="rounded-xl shadow-lg"
+            />
+            <p class="mt-4 text-sm text-gray-500 text-center max-w-xs">
+              {{ $t('home.southOpenCaption') }}
+            </p>
+          </div>
+          <!-- Text -->
+          <div>
+            <h3 class="text-2xl font-semibold mb-2">{{ $t('home.southOpen') }}</h3>
+            <p class="text-base leading-relaxed">
+              {{ $t('home.southOpenText') }}
+            </p>
+          </div>
         </div>
       </section>
     </div>
@@ -145,52 +208,13 @@ const submit = async () => {
           </div>
           <!-- Image + Caption -->
           <div class="flex flex-col items-center">
-            <img src="/images/2025/2025-wo-onstage&open.webp" alt="team faabs and onstage world open 2025" class="rounded-xl shadow-lg" />
+            <img
+              src="/images/2025/2025-wo-onstage&open.webp"
+              alt="team faabs and onstage world open 2025"
+              class="rounded-xl shadow-lg"
+            />
             <p class="mt-4 text-sm text-gray-500 text-center max-w-xs">
               {{ $t('home.worldOpenCaption') }}
-            </p>
-          </div>
-        </div>
-      </section>
-    </div>
-    <!-- German Open 2025 -->
-    <div>
-      <section class="min-h-[60vh] bg-white py-10 px-4 md:px-16">
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-6 items-start">
-          <!-- Image + Caption -->
-          <div class="flex flex-col items-center">
-            <img src="/images/2025/2025-go-picture-100.webp" alt="three winners from rcj go 2025" class="rounded-xl shadow-lg" />
-            <p class="mt-4 text-sm text-gray-500 text-center max-w-xs">
-              {{ $t('home.germanOpenCaption') }}
-            </p>
-          </div>
-
-          <!-- Text -->
-          <div>
-            <h3 class="text-2xl font-semibold mb-2">{{ $t('home.germanOpen') }}</h3>
-            <p class="text-base leading-relaxed">
-              {{ $t('home.germanOpenText') }}
-            </p>
-          </div>
-        </div>
-      </section>
-    </div>
-    <!-- South Open 2025 -->
-    <div>
-      <section class="min-h-[60vh] bg-gray-50 py-10 px-4 md:px-16">
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-6 items-start">
-          <!-- Text -->
-          <div>
-            <h3 class="text-2xl font-semibold mb-2">{{ $t('home.southOpen') }}</h3>
-            <p class="text-base leading-relaxed">
-              {{ $t('home.southOpenText') }}
-            </p>
-          </div>
-          <!-- Image + Caption -->
-          <div class="flex flex-col items-center">
-            <img src="/images/2025/2025-vo-picture-42.webp" alt="all teams RCJV 2025" class="rounded-xl shadow-lg" />
-            <p class="mt-4 text-sm text-gray-500 text-center max-w-xs">
-              {{ $t('home.southOpenCaption') }}
             </p>
           </div>
         </div>
