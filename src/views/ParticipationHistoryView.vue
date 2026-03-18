@@ -9,11 +9,19 @@ const history = computed(() => [
     year: 2026,
     location: t('partHistory.cologne'),
     awards: [
-      { team: 'Team Faabs', title: t('teams.teamfaabs_vo2026') },
-      { team: 'Team Mathimazierer', title: t('teams.mathimazierer_vo2026') },
+      { team: 'Team Faabs', title: t('teams.teamfaabs_go2026') },
+      { team: 'Team Faabs', title: t('teams.teamfaabs_go2026-st') },
+      { team: 'Team Faabs', title: t('teams.teamfaabs_go2026-tc') },
+      { team: 'Team Mathimazierer', title: t('teams.mathimazierer_go2026') },
+      { team: 'Team Mathimazierer', title: t('teams.mathimazierer_go2026-st') },
       { team: 'Die Sauren  Glühwurmchen', title: t('teams.dsg_go2026') },
     ],
-    images: [],
+    images: [
+      '/images/2026/2026-go-picture-kast01.webp',
+      '/images/2026/2026-go-picture-kast02.webp',
+      '/images/2026/2026-go-picture-gord01.webp',
+
+    ],
   },
   {
     name: t('partHistory.vo'),

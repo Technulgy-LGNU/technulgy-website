@@ -11,6 +11,7 @@ const teamsActive = computed(() => [
     awards: [
       t('teams.teamfaabs_go2026'),
       t('teams.teamfaabs_go2026-st'),
+      t('teams.teamfaabs_go2026-tc'),
       t('teams.teamfaabs_vo2026'),
       t('teams.teamfaabs_wo2025'),
       t('teams.teamfaabs_wo2025-op'),
