@@ -1,40 +1,90 @@
 <script setup lang="ts">
 const sponsors = [
   {
-    name: 'Blech & Technik',
-    logo: '/images/sponsors/bt_logo.webp',
-    url: 'https://www.blechundtechnik.de/'
+    name: 'Celos',
+    logo: '/images/sponsors/celos.webp',
+    url: 'https://celos.de',
   },
   {
     name: 'Multivac',
     logo: '/images/sponsors/logo-multivac-blue.webp',
-    url: 'https://www.multivac.com/de/'
+    url: 'https://www.multivac.com/de/',
+  },
+  {
+    name: 'Blech & Technik',
+    logo: '/images/sponsors/bt_logo.webp',
+    url: 'https://www.blechundtechnik.de/',
+  },
+  {
+    name: 'Ulm Digital',
+    logo: '/images/sponsors/ulmdigital-2.webp',
+    url: 'https://ulm-digital.com/',
   },
   {
     name: 'Wieland',
     logo: '/images/sponsors/logo_wieland.webp',
-    url: 'https://www.wieland.com/de/'
+    url: 'https://www.wieland.com/de/',
   },
   {
-    name: 'Maxon Motors',
-    logo: '/images/sponsors/maxonmoters.webp',
-    url: 'https://www.maxongroup.com/de-de'
+    name: 'Settele Spätzle',
+    logo: '/images/sponsors/settele.webp',
+    url: 'https://settele.de',
   },
   {
-    name: 'Ulm Digital',
-    logo: '/images/sponsors/ulmdigital.webp',
-    url: 'https://ulm-digital.com/'
+    name: 'Hensoldt',
+    logo: '/images/sponsors/hensoldt.webp',
+    url: 'https://hensoldt.net',
+  },
+  {
+    name: 'VDMA',
+    logo: '/images/sponsors/vdma.webp',
+    url: 'https://vdma.eu',
   },
   {
     name: 'ZwickRoll',
     logo: '/images/sponsors/zwickroll.webp',
-    url: 'https://www.zwickroell.com/de/'
+    url: 'https://www.zwickroell.com/de/',
+  },
+  {
+    name: 'Maxon Motors',
+    logo: '/images/sponsors/maxonmoters.webp',
+    url: 'https://www.maxongroup.com/de-de',
+  },
+  {
+    name: 'Sparkasse Ulm',
+    logo: '/images/sponsors/sparkasseulm.webp',
+    url: 'https://www.sparkasse-ulm.de/',
+  },
+  {
+    name: 'VDI',
+    logo: '/images/sponsors/vdi.webp',
+    url: 'https://vdi.de',
+  },
+  {
+    name: 'Deloitte Innowake',
+    logo: '/images/sponsors/deloitteinnowake.webp',
+    url: 'https://www.deloitte.com/dk/en/services/consulting/services/application-modernization.html',
+  },
+  {
+    name: 'Utzin Utz',
+    logo: '/images/sponsors/utzinutz.webp',
+    url: 'https://deutzin-utz.com',
+  },
+  {
+    name: 'Bosch Rexroth',
+    logo: '/images/sponsors/boschrexroth.webp',
+    url: 'https://www.boschrexroth.com/de/de/',
+  },
+  {
+    name: 'VR-Bank Neu-Ulm',
+    logo: '/images/sponsors/vrbankneuulm.webp',
+    url: 'https://vrnu.de',
   },
   {
     name: 'Multi CB',
     logo: '/images/sponsors/multicb.webp',
-    url: 'https://www.multicb.com/'
-  }
+    url: 'https://www.multicb.com/',
+  },
 ]
 </script>
 
@@ -78,6 +128,4 @@ const sponsors = [
   </section>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
