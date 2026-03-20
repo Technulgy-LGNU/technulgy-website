@@ -66,9 +66,9 @@ const sponsors = [
     url: 'https://www.deloitte.com/dk/en/services/consulting/services/application-modernization.html',
   },
   {
-    name: 'Utzin Utz',
+    name: 'Uzin Utz',
     logo: '/images/sponsors/utzinutz.webp',
-    url: 'https://deutzin-utz.com',
+    url: 'https://uzin-utz.com',
   },
   {
     name: 'Bosch Rexroth',
