@@ -66,9 +66,9 @@ const sponsors = [
     url: 'https://career.deloitte-innowake.de/',
   },
   {
-    name: 'Utzin Utz',
+    name: 'Uzin Utz',
     logo: '/images/sponsors/utzinutz.webp',
-    url: 'https://deutzin-utz.com',
+    url: 'https://uzin-utz.com',
   },
   {
     name: 'Bosch Rexroth',
