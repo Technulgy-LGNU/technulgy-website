@@ -51,9 +51,9 @@ const sponsors = [
     url: 'https://www.maxongroup.com/de-de',
   },
   {
-    name: 'Sparkasse Ulm',
-    logo: '/images/sponsors/sparkasseulm.webp',
-    url: 'https://www.sparkasse-ulm.de/',
+    name: 'Sparkasse Neu-Ulm Illertissen',
+    logo: '/images/sponsors/sparkasseneuulm.webp',
+    url: 'https://www.sparkasse-neu-ulm-illertissen.de/de/home.html',
   },
   {
     name: 'VDI',
@@ -63,7 +63,7 @@ const sponsors = [
   {
     name: 'Deloitte Innowake',
     logo: '/images/sponsors/deloitteinnowake.webp',
-    url: 'https://www.deloitte.com/dk/en/services/consulting/services/application-modernization.html',
+    url: 'https://career.deloitte-innowake.de/',
   },
   {
     name: 'Uzin Utz',
