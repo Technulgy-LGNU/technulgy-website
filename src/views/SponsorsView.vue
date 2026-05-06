@@ -51,6 +51,11 @@ const sponsors = [
     url: 'https://www.maxongroup.com/de-de',
   },
   {
+    name: 'Ingenics Consulting',
+    logo: '/images/sponsors/ingenics_consulting.webp',
+    url: 'https://www.ingenics.com/de/',
+  },
+  {
     name: 'Volksbank-Stiftung Ulm-Biberach',
     logo: '/images/sponsors/volksbankstiftungulmbiberach.webp',
     url: 'https://www.volksbank-ulm-biberach.de/startseite.html',
