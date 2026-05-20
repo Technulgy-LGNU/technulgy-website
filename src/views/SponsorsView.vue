@@ -51,11 +51,6 @@ const sponsors = [
     url: 'https://www.maxongroup.com/de-de',
   },
   {
-    name: 'Würth Elektronik',
-    logo: '/images/sponsors/wuerth.webp',
-    url: 'https://www.we-online.com/en/',
-  },
-  {
     name: 'Sparkasse Neu-Ulm Illertissen',
     logo: '/images/sponsors/sparkasseneuulm.webp',
     url: 'https://www.sparkasse-neu-ulm-illertissen.de/de/home.html',
@@ -76,11 +71,6 @@ const sponsors = [
     url: 'https://deutzin-utz.com',
   },
   {
-    name: 'Mädler',
-    logo: '/images/sponsors/maedler.webp',
-    url: 'https://maedler.de',
-  },
-  {
     name: 'Bosch Rexroth',
     logo: '/images/sponsors/boschrexroth.webp',
     url: 'https://www.boschrexroth.com/de/de/',
@@ -94,21 +84,6 @@ const sponsors = [
     name: 'Multi CB',
     logo: '/images/sponsors/multicb.webp',
     url: 'https://www.multicb.com/',
-  },
-  {
-    name: 'Molex',
-    logo: '/images/sponsors/molex.webp',
-    url: 'https://www.molex.de/',
-  },
-  {
-    name: 'Wefer 3D',
-    logo: '/images/sponsors/wefer3d.webp',
-    url: 'https://wefer3d.com/',
-  },
-  {
-    name: 'Hoise & Span',
-    logo: '/images/sponsors/hoise_span.webp',
-    url: 'https://www.hoeise-span.de/',
   },
 ]
 </script>
