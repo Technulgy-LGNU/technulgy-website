@@ -36,6 +36,11 @@ const sponsors = [
     url: 'https://hensoldt.net',
   },
   {
+    name: 'Würth Elektronik',
+    logo: '/images/sponsors/wuerth.webp',
+    url: 'https://we-online.de',
+  },
+  {
     name: 'VDMA',
     logo: '/images/sponsors/vdma.webp',
     url: 'https://vdma.eu',
@@ -49,6 +54,11 @@ const sponsors = [
     name: 'Maxon Motors',
     logo: '/images/sponsors/maxonmoters.webp',
     url: 'https://www.maxongroup.com/de-de',
+  },
+  {
+    name: 'Molex',
+    logo: '/images/sponsors/molex.webp',
+    url: 'https://www.molex.com/',
   },
   {
     name: 'Ingenics Consulting',
@@ -71,14 +81,29 @@ const sponsors = [
     url: 'https://vdi.de',
   },
   {
+    name: 'Mädler',
+    logo: '/images/sponsors/maedler.webp',
+    url: 'https://maedler.de',
+  },
+  {
+    name: 'Hoise und Span',
+    logo: '/images/sponsors/hoise_span.webp',
+    url: 'https://www.hoeise-span.de/',
+  },
+  {
+    name: 'Wefer 3D',
+    logo: '/images/sponsors/wefer3d.webp',
+    url: 'https://wefer3d.com',
+  },
+  {
     name: 'Deloitte Innowake',
     logo: '/images/sponsors/deloitteinnowake.webp',
     url: 'https://career.deloitte-innowake.de/',
   },
   {
-    name: 'Uzin Utz',
+    name: 'Utzin Utz',
     logo: '/images/sponsors/utzinutz.webp',
-    url: 'https://uzin-utz.com',
+    url: 'https://deutzin-utz.com',
   },
   {
     name: 'Bosch Rexroth',
