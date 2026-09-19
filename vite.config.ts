@@ -14,7 +14,16 @@ export default defineConfig({
     tailwindcss(),
     VueI18nPlugin({
       include: [fileURLToPath(new URL('./src/locales/**', import.meta.url))],
-    })
+    }),
+    {
+      name: 'mark-compiled-locales-as-javascript',
+      enforce: 'pre',
+      transform(code, id) {
+        if (id.includes('/src/locales/') && id.endsWith('.json')) {
+          return { code, moduleType: 'js' }
+        }
+      },
+    },
   ],
   resolve: {
     alias: {
