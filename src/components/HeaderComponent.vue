@@ -1,11 +1,20 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
+import { computed, ref, watch } from 'vue'
+import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
+
+const route = useRoute()
+watch(
+  () => route.fullPath,
+  () => {
+    mobileMenuOpen.value = false
+  },
+)
 
 const mobileMenuOpen = ref<boolean>(false)
 
 const toggleMobileMenu = () => {
-  mobileMenuOpen.value = !mobileMenuOpen.value;
+  mobileMenuOpen.value = !mobileMenuOpen.value
 }
 
 const { t, locale } = useI18n()
@@ -13,34 +22,33 @@ const { t, locale } = useI18n()
 const isEnglish = computed({
   get: () => locale.value === 'en',
   set: (value: boolean) => {
-    locale.value = value ? 'en' : 'de';
-    switchLanguage()
-  }
+    locale.value = value ? 'en' : 'de'
+  },
 })
-
-async function switchLanguage() {
-  document.querySelector('html')?.setAttribute('lang', locale.value)
-  localStorage.setItem('lang', locale.value)
-}
 </script>
 
 <template>
   <header class="w-full bg-gray-800 text-white shadow-md">
     <div class="max-w-7xl mx-auto px-6 flex justify-between items-center h-16">
       <!-- Logo -->
-      <router-link to="/" class="text-xl font-semibold">
-        Technulgy
-      </router-link>
+      <router-link to="/" class="text-xl font-semibold"> Technulgy </router-link>
 
       <!-- Navigation (Desktop) -->
-      <nav class="hidden md:flex space-x-6">
-        <router-link to="/" class="hover:text-gray-300" >{{ t('nav.home')}}</router-link>
-        <router-link to="/teams" class="hover:text-gray-300" >Teams</router-link>
-        <router-link to="/participation-history" class="hover:text-gray-300" >{{ t('nav.partHistory') }}</router-link>
-        <router-link to="/sponsors" class="hover:text-gray-300" >{{ t('nav.sponsors') }}</router-link>
-        <router-link to="/publications" class="hover:text-gray-300" >{{ t('nav.publications') }}</router-link>
-        <router-link to="/links" class="hover:text-gray-300" >Links</router-link>
-        <router-link to="/Impressum" class="hover:text-gray-300" >Impressum</router-link>
+      <nav class="hidden lg:flex space-x-4">
+        <router-link to="/" class="hover:text-gray-300">{{ t('nav.home') }}</router-link>
+        <router-link to="/blog" class="hover:text-gray-300">{{ t('nav.blog') }}</router-link>
+        <router-link to="/teams" class="hover:text-gray-300">Teams</router-link>
+        <router-link to="/participation-history" class="hover:text-gray-300">{{
+          t('nav.partHistory')
+        }}</router-link>
+        <router-link to="/sponsors" class="hover:text-gray-300">{{
+          t('nav.sponsors')
+        }}</router-link>
+        <router-link to="/publications" class="hover:text-gray-300">{{
+          t('nav.publications')
+        }}</router-link>
+        <router-link to="/links" class="hover:text-gray-300">Links</router-link>
+        <router-link to="/Impressum" class="hover:text-gray-300">Impressum</router-link>
       </nav>
 
       <!-- Right Section: Language Switcher & Mobile Menu Button -->
@@ -51,9 +59,10 @@ async function switchLanguage() {
             type="checkbox"
             class="sr-only peer"
             v-model="isEnglish"
+            :aria-label="t('nav.language')"
           />
           <div
-            class="w-11 h-6 bg-gray-400 rounded-full peer dark:bg-gray-600 peer-checked:bg-blue-500 transition duration-300"
+            class="w-11 h-6 bg-gray-400 rounded-full peer dark:bg-gray-600 peer-checked:bg-blue-500 peer-focus-visible:ring-2 peer-focus-visible:ring-white peer-focus-visible:ring-offset-2 peer-focus-visible:ring-offset-gray-800 transition duration-300"
           ></div>
           <div
             class="absolute left-0.5 top-0.5 bg-white w-5 h-5 rounded-full shadow-md transform peer-checked:translate-x-5 transition-transform duration-300"
@@ -63,24 +72,35 @@ async function switchLanguage() {
       </div>
 
       <!-- Mobile Menu Button -->
-      <button @click="toggleMobileMenu" class="md:hidden text-white text-2xl">
+      <button
+        :aria-label="t('nav.menu')"
+        :aria-expanded="mobileMenuOpen"
+        @click="toggleMobileMenu"
+        class="lg:hidden text-white text-2xl"
+      >
         ☰
       </button>
     </div>
 
     <!-- Mobile Navigation -->
-    <div v-if="mobileMenuOpen" class="md:hidden bg-gray-800 text-white px-4 py-6 flex flex-col space-y-4 text-lg">
-      <router-link to="/" class="hover:text-gray-300" >{{ t('nav.home')}}</router-link>
-      <router-link to="/teams" class="hover:text-gray-300" >Teams</router-link>
-      <router-link to="/participation-history" class="hover:text-gray-300" >{{ t('nav.partHistory') }}</router-link>
-      <router-link to="/sponsors" class="hover:text-gray-300" >{{ t('nav.sponsors') }}</router-link>
-      <router-link to="/publications" class="hover:text-gray-300" >{{ t('nav.publications') }}</router-link>
-      <router-link to="/links" class="hover:text-gray-300" >Links</router-link>
-      <router-link to="/Impressum" class="hover:text-gray-300" >Impressum</router-link>
+    <div
+      v-if="mobileMenuOpen"
+      class="lg:hidden bg-gray-800 text-white px-4 py-6 flex flex-col space-y-4 text-lg"
+    >
+      <router-link to="/" class="hover:text-gray-300">{{ t('nav.home') }}</router-link>
+      <router-link to="/blog" class="hover:text-gray-300">{{ t('nav.blog') }}</router-link>
+      <router-link to="/teams" class="hover:text-gray-300">Teams</router-link>
+      <router-link to="/participation-history" class="hover:text-gray-300">{{
+        t('nav.partHistory')
+      }}</router-link>
+      <router-link to="/sponsors" class="hover:text-gray-300">{{ t('nav.sponsors') }}</router-link>
+      <router-link to="/publications" class="hover:text-gray-300">{{
+        t('nav.publications')
+      }}</router-link>
+      <router-link to="/links" class="hover:text-gray-300">Links</router-link>
+      <router-link to="/Impressum" class="hover:text-gray-300">Impressum</router-link>
     </div>
   </header>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
