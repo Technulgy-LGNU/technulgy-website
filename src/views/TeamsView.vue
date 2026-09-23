@@ -1,109 +1,20 @@
 <script setup lang="ts">
-import { useI18n } from 'vue-i18n'
 import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
+import { entryImages, type Team } from '@/api/website'
+import { useWebsiteContent } from '@/composables/useWebsiteContent'
+import ContentState from '@/components/ContentState.vue'
+import ImageCarousel from '@/components/ImageCarousel.vue'
 const { t } = useI18n()
-
-const teamsActive = computed(() => [
+const { data: teams, loading, error, reload } = useWebsiteContent<Team[]>('teams', true)
+const groups = computed(() => [
   {
-    name: 'Team Faabs',
-    description: t('teams.teamfaabs'),
-    image: '/images/teams/team-faabs.webp',
-    awards: [
-      t('teams.teamfaabs_go2026'),
-      t('teams.teamfaabs_go2026-st'),
-      t('teams.teamfaabs_go2026-tc'),
-      t('teams.teamfaabs_vo2026'),
-      t('teams.teamfaabs_wo2025'),
-      t('teams.teamfaabs_wo2025-op'),
-      t('teams.teamfaabs_go2025'),
-      t('teams.teamfaabs_go2025-tc'),
-      t('teams.teamfaabs_vo2025'),
-      t('teams.teamfaabs_go2024'),
-      t('teams.teamfaabs_vo2024'),
-      t('teams.teamfaabs_wo2023'),
-      t('teams.teamfaabs_wo2023-da'),
-      t('teams.teamfaabs_go2023'),
-      t('teams.teamfaabs_go2023-st'),
-      t('teams.teamfaabs_vo2023'),
-      t('teams.teamfaabs_eo2022'),
-      t('teams.teamfaabs_go2022'),
-    ],
+    title: t('teams.active'),
+    teams: teams.value?.filter((team) => team.status === 'active') ?? [],
   },
   {
-    name: 'Team Mathimazierer',
-    description: t('teams.mathimazierer'),
-    image: '/images/teams/team-mathemazierer.webp',
-    awards: [
-      t('teams.mathimazierer_go2026'),
-      t('teams.mathimazierer_go2026-st'),
-      t('teams.mathimazierer_vo2026'),
-      t('teams.mathimazierer_wo2025'),
-      t('teams.mathimazierer_go2025'),
-      t('teams.mathimazierer_go2025-st'),
-      t('teams.mathimazierer_vo2025'),
-      t('teams.mathimazierer_eo2024'),
-      t('teams.mathimazierer_go2024'),
-      t('teams.mathimazierer_vo2024'),
-      t('teams.mathimazierer_eo2023'),
-      t('teams.mathimazierer_go2023'),
-      t('teams.mathimazierer_vo2023'),
-    ],
-  },
-  {
-    name: 'Team Robochip',
-    description: t('teams.robochip'),
-    image: '/images/teams/team-robochip.webp',
-    awards: [
-      t('teams.robochip_vo2026'),
-    ],
-  },
-  {
-    name: 'Die Sauren Glühwurmchen',
-    description: t('teams.dsg'),
-    image: '/images/teams/team-diesaurengluehwurmchen.webp',
-    awards: [t('teams.dsg_go2026'), t('teams.dsg_vo2026')],
-  },
-  {
-    name: 'Team Robochamps',
-    description: t('teams.robochamps'),
-    image: '/images/teams/team-robochamps.webp',
-    awards: [t('teams.robochamps_vo2026')],
-  },
-])
-
-const teamsInactive = computed(() => [
-  {
-    name: 'Team Robotronic',
-    description: t('teams.robotronic'),
-    image: '/images/teams/team-robotronic.webp',
-    awards: [
-      t('teams.robotronic_go2024'),
-      t('teams.robotronic_vo2024'),
-      t('teams.robotronic_wo2023-st'),
-      t('teams.robotronic_go2023'),
-      t('teams.robotronic_go2023-st'),
-      t('teams.robotronic_vo2023'),
-      t('teams.robotronic_vo2019'),
-    ],
-  },
-  {
-    name: 'Team Nuttellabroetchen',
-    description: t('teams.nuttellabroetchen'),
-    image: '/images/teams/team-nuttellabroetchen.webp',
-    awards: [
-      t('teams.nuttellabroetchen_wo2025'),
-      t('teams.nuttellabroetchen_wo2025-st'),
-      t('teams.nuttellabroetchen_wo2025-bp'),
-      t('teams.nuttellabroetchen_wo2025-bp2'),
-      t('teams.nuttellabroetchen_go2025'),
-      t('teams.nuttellabroetchen_vo2025'),
-      t('teams.nuttellabroetchen_eo2024'),
-      t('teams.nuttellabroetchen_go2024'),
-      t('teams.nuttellabroetchen_vo2024'),
-      t('teams.nuttellabroetchen_go2023'),
-      t('teams.nuttellabroetchen_vo2023'),
-      t('teams.nuttellabroetchen_go2022'),
-    ],
+    title: t('teams.inactive'),
+    teams: teams.value?.filter((team) => team.status === 'retired') ?? [],
   },
 ])
 </script>
@@ -111,63 +22,36 @@ const teamsInactive = computed(() => [
 <template>
   <section class="bg-white py-12 px-4 md:px-16 text-gray-800">
     <h1 class="text-3xl md:text-4xl font-bold text-center mb-12">{{ t('teams.title') }}</h1>
-    <div class="max-w-7xl mx-auto">
-      <h1 class="text-3xl md:text-4xl font-bold text-center mb-12">{{ t('teams.active') }}</h1>
-
-      <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
-        <div
-          v-for="team in teamsActive"
-          :key="team.name"
-          class="bg-gray-50 rounded-2xl shadow-md hover:shadow-lg transition p-6 flex flex-col"
-        >
-          <img
-            :src="team.image"
-            :alt="team.name"
-            class="w-full h-48 object-cover rounded-xl mb-4"
-          />
-
-          <h2 class="text-xl font-semibold mb-2">{{ team.name }}</h2>
-          <p class="text-sm text-gray-600 mb-4">{{ team.description }}</p>
-
-          <div>
-            <h3 class="font-medium mb-1 text-gray-700">{{ t('teams.awards') }}:</h3>
-            <ul class="list-disc list-inside text-sm text-gray-700">
-              <li v-for="award in team.awards" :key="award">{{ award }}</li>
-            </ul>
-          </div>
+    <ContentState :loading="loading" :error="error" :empty="teams?.length === 0" @retry="reload" />
+    <template v-for="group in groups" :key="group.title">
+      <div v-if="group.teams.length" class="max-w-7xl mx-auto mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">{{ group.title }}</h2>
+        <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+          <article
+            v-for="team in group.teams"
+            :id="team.slug"
+            :key="team.id"
+            class="bg-gray-50 rounded-2xl shadow-md hover:shadow-lg transition p-6 flex flex-col scroll-mt-6"
+          >
+            <ImageCarousel
+              :images="entryImages(team)"
+              :start-image="team.startImage || team.image"
+              :label="team.name"
+              class="h-48 mb-4"
+            />
+            <h3 class="text-xl font-semibold mb-2">{{ team.name }}</h3>
+            <p class="text-sm text-gray-600 mb-4 whitespace-pre-line">{{ team.description }}</p>
+            <div v-if="team.awards.length">
+              <h4 class="font-medium mb-1 text-gray-700">{{ t('teams.awards') }}:</h4>
+              <ul class="list-disc list-inside text-sm text-gray-700">
+                <li v-for="(award, index) in team.awards" :key="`${award.eventId}-${index}`">
+                  {{ award.event }} {{ award.year }} — {{ award.league }}: {{ award.result }}
+                </li>
+              </ul>
+            </div>
+          </article>
         </div>
       </div>
-    </div>
-    <div class="max-w-7xl mx-auto">
-      <h1 class="text-3xl md:text-4xl font-bold text-center mb-5 mt-12">
-        {{ t('teams.inactive') }}
-      </h1>
-
-      <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
-        <div
-          v-for="team in teamsInactive"
-          :key="team.name"
-          class="bg-gray-50 rounded-2xl shadow-md hover:shadow-lg transition p-6 flex flex-col"
-        >
-          <img
-            :src="team.image"
-            :alt="team.name"
-            class="w-full h-48 object-cover rounded-xl mb-4"
-          />
-
-          <h2 class="text-xl font-semibold mb-2">{{ team.name }}</h2>
-          <p class="text-sm text-gray-600 mb-4">{{ team.description }}</p>
-
-          <div>
-            <h3 class="font-medium mb-1 text-gray-700">{{ t('teams.awards') }}:</h3>
-            <ul class="list-disc list-inside text-sm text-gray-700">
-              <li v-for="award in team.awards" :key="award">{{ award }}</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+    </template>
   </section>
 </template>
-
-<style scoped></style>

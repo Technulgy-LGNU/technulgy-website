@@ -12,13 +12,15 @@
     "lint:oxlint": "oxlint . --fix -D correctness --ignore-path .gitignore",
     "lint:eslint": "eslint . --fix",
     "lint": "run-s lint:*",
-    "format": "prettier --write src/"
+    "format": "prettier --write src/",
+    "test": "vitest run"
   },
   "dependencies": {
     "@heroicons/vue": "^2.2.0",
     "@intlify/unplugin-vue-i18n": "^6.0.5",
     "@tailwindcss/vite": "^4.1.2",
     "axios": "^1.15.0",
+    "markdown-it": "^15.0.2",
     "posthog-js": "^1.388.1",
     "tailwindcss": "^4.1.2",
     "vue": "^3.5.13",
@@ -28,21 +30,25 @@
   },
   "devDependencies": {
     "@tsconfig/node22": "^22.0.1",
+    "@types/markdown-it": "^14.2.0",
     "@types/node": "^22.13.14",
     "@vitejs/plugin-vue": "^6.0.7",
     "@vue/eslint-config-prettier": "^10.2.0",
     "@vue/eslint-config-typescript": "^14.5.0",
+    "@vue/test-utils": "^2.5.1",
     "@vue/tsconfig": "^0.7.0",
     "eslint": "^9.31.0",
     "eslint-plugin-oxlint": "^0.16.0",
     "eslint-plugin-vue": "~10.0.0",
     "jiti": "^2.4.2",
+    "jsdom": "^30.1.0",
     "npm-run-all2": "^7.0.2",
     "oxlint": "^0.16.0",
     "prettier": "3.5.3",
     "typescript": "~5.8.0",
     "vite": "^8.0.16",
     "vite-plugin-vue-devtools": "^8.1.3",
+    "vitest": "^5.0.1",
     "vue-tsc": "^2.2.8"
   }
 }

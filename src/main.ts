@@ -9,15 +9,21 @@ import de from './locales/de.json'
 import en from './locales/en.json'
 import posthog from '@/plugins/posthog.ts'
 
+const requestedLanguage = new URLSearchParams(window.location.search).get('lang')
+const savedLanguage = localStorage.getItem('lang')
+const initialLanguage =
+  [requestedLanguage, savedLanguage].find((language) => language === 'de' || language === 'en') ??
+  (navigator.language.toLowerCase().startsWith('de') ? 'de' : 'en')
+
 const i18n = createI18n({
-  locale: 'de',
+  locale: initialLanguage,
   fallbackLocale: 'en',
   legacy: false,
   globalInjection: true,
   messages: {
     de,
     en,
-  }
+  },
 })
 
 const app = createApp(App)
