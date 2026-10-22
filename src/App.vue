@@ -3,28 +3,37 @@ import { RouterView } from 'vue-router'
 import HeaderComponent from '@/components/HeaderComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
 import { useI18n } from 'vue-i18n'
-import { onMounted, ref } from 'vue'
+import { onMounted, ref, watch } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
 import CookiesConsentComponent from '@/components/CookiesConsentComponent.vue'
 
 const { locale } = useI18n()
 
-if (localStorage.getItem('lang') === null) {
-  if (window.navigator.language === 'de') {
-    locale.value = 'de'
-    document.querySelector('html')?.setAttribute('lang', 'de')
-    localStorage.setItem('lang', 'de')
-  } else {
-    locale.value = 'en'
-    document.querySelector('html')?.setAttribute('lang', 'en')
-    localStorage.setItem('lang', 'en')
-  }
-}
+const route = useRoute()
+const router = useRouter()
+watch(
+  () => route.query.lang,
+  (language) => {
+    if (language === 'de' || language === 'en') locale.value = language
+  },
+  { immediate: true },
+)
+watch(
+  locale,
+  (language) => {
+    document.documentElement.lang = language
+    localStorage.setItem('lang', language)
+    if (route.query.lang && route.query.lang !== language) {
+      void router.replace({ query: { ...route.query, lang: language } })
+    }
+  },
+  { immediate: true },
+)
 
 const mainContent = ref<HTMLElement | null>(null)
-onMounted(() =>{
+onMounted(() => {
   mainContent.value?.focus()
 })
-
 </script>
 
 <template>
@@ -38,5 +47,4 @@ onMounted(() =>{
   </div>
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>

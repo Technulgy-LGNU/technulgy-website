@@ -5,10 +5,12 @@ WORKDIR /app
 
 COPY package*.json ./
 
-RUN npm install
+RUN npm ci
 
 COPY . .
 
+ARG VITE_TAS_BASE_URL=https://tas.technulgy.com
+ENV VITE_TAS_BASE_URL=$VITE_TAS_BASE_URL
 RUN npm run build
 
 
@@ -16,6 +18,8 @@ RUN npm run build
 FROM nginx:stable-alpine AS production-stage
 
 COPY --from=build-stage /app/dist /usr/share/nginx/html
+
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 80
 

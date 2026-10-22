@@ -3,159 +3,83 @@
     "home": "Home",
     "partHistory": "Participation History",
     "sponsors": "Sponsors",
-    "publications": "Publications"
+    "publications": "Publications",
+    "blog": "News",
+    "language": "Switch language to English",
+    "menu": "Toggle navigation"
   },
-
   "cookies": {
     "submit": "Accept",
     "text": "This website uses cookies to provide you with the best possible functionality. By clicking \"Accept\" or using the site, you agree to the use of cookies."
   },
-
   "home": {
     "more": "LEARN MORE",
     "about": "ABOUT US",
-    "aboutText": "We are the robotics club of Lessing Gymnasium Neu-Ulm. We develop, build and program robots for the international RoboCup Junior. The RoboCup is an international organization whose goal is to beat humans in the sport of soccer by 2050. RoboCup Junior was created to raise awareness of RoboCup among young people, especially schoolchildren. Here, school teams from all over the world compete in various leagues, such as Soccer (robots play soccer against each other) or OnStage (students perform a play with robots). Our teams have been an integral part of RoboCup Junior since 2007 and have already won several world Opens.",
-
-    "worldOpen": "RoboCup Junior World Open 2025",
-    "worldOpenText": "The world Open 2025 in Brazil ended with great success for our teams. 'Team Faabs' managed to win the third place in Soccer Open and get the OpenSource Award. 'Team Mathemazierer' managed to achieve fourth place, which is incredible keeping in mind that this was their first time at a world open and they still have many things to learn and improve. The real winners of this years world open is our OnStage Team 'Team Nuttelabrötchen'. After many disappointing and hard years they managed, thanks to the new members Lisa and Bahaa, to put a show on the stage which earned them the first place. They also got the first place in the OnStage Superteam league and awards for the best poster and best performance. The teams are now looking forward to the next season and are already preparing for the South Open 2026.",
-    "worldOpenCaption": "Team Faabs and Team Nuttellabroetchen at the World Open 2025 in Brazil",
-    "germanOpen": "RoboCup Junior German Open 2026",
-    "germanOpenText": "After the extremely successful participation in the South German Championship 2026 in Vöhringen, our teams set off for Cologne to attend the German Championship 2026 less than two weeks later.\n\nDue to the short time between the two championships, the teams were only able to improve their software—and they made the most of it. “Team Faabs” managed to almost completely eliminate their latency, while “Team Mathimazierer” implemented new features.\n\nAfter several very exciting days of competition, Team Mathimazierer reached the final and managed to win it with a very close 3–2 victory in the last minute. With this win, they qualified for the World Championship in Incheon, South Korea.\n\n“Team Faabs” would have also made it to the final, but due to very controversial decisions by the organizers, the rankings were adjusted to their disadvantage. However, this is not the end for them: they will compete at the World Championship in the Major Soccer Small Size League and face top university teams.\n\nThe teams are now beginning their preparations for the 2026 World Championship.",
-    "germanOpenCaption": "Team Mathimazierer at the German Open 2026 in Cologne",
-    "southOpen": "RoboCup Junior South Open 2026",
-    "southOpenText": "The new season of RoboCup Junior has begun, and the teams were ready for their first major challenge: the South German Championship 2026 in Vöhringen. After an intensive preparation period, during which the teams further developed and optimized their robots, they set off for Vöhringen to compete against other teams from Southern Germany.\n\nAfter two very successful days of competition, the results were outstanding: in every league we participated in, we achieved first place. “Team Faabs” in Soccer Vision, “Team Mathimazierer” in Soccer Infrared, “Die Sauren Glühwürmchen” in OnStage Entry, and “Team Robochamps” in Rescue Line Entry all secured the top position. Aswell as Team Robochip, wich scored second place in the Soccer Vision category. \n\nThe teams performed exceptionally well and proved themselves against the best teams in Southern Germany. Now, they are preparing for the German Championship 2026 in Cologne, which will take place in just two weeks (mid-March).",
-    "southOpenCaption": "All our teams of the South Open 2025 in Vöhringen",
-
     "videos": "Our Videos",
-    "video_eo2022": "Highlights EM 2022",
-    "video_eo2022-description": "Watch the highlights from the 2022 european open in Porto (Portugal)!",
-    "video_go2024": "Highlights {'@'}TeamFaabs German Open 2024",
-    "video_go2024-description": "Watch the best plays from {'@'}TeamFaabs at the 2024 German Open in Kassel (Germany)!",
-
     "formTitle": "Contact",
     "formText": "If you have any questions or inquiries, feel free to write us a message:",
     "formSubmit": "Submit",
     "formReset": "Reset"
   },
-
   "publications": {
     "title": "Publications",
-
-    "titleTDP": "Poster and Technical Description Papers",
-    "TDPText": "Here you can find our posters and technical description papers from the last competitions. If you have any questions about the content, feel free to contact us.",
-    "TDPCaption": "Poster from Team Faabs from the 2023 WM",
-
-    "titleMechanics": "Mechanical Design",
-    "mechanicsText": "We made it our goal to build the perfect robots, you can find a few different iterations published here.",
-    "mechanicsCaption": "Team Faabs 2023 Soccer Open World Champion",
-
-    "titleElectronics": "Electronics",
-    "electronicsText": "Currently we only published some older Eagle libraries, but we plan to publish more in the future.",
-    "electronicsCaption": "Team Robotronics 2023 Mainboard",
-
-    "titleSoftware": "Software",
-    "softwareText": "We also want to help other teams with their software, so here a list of published projects from the last years:",
-    "softwareText2": "All of our software is licensed under the MIT License. If you have any questions about the software, feel free to contact us. We also OpenSource the LaTeX Code of all of our Technical Description Papers, you can find it on GitHub.",
-    "softwareCaption": "Software used by us",
-
-    "worldOpen": "For the World Open 2025 you can find all published Mechanics, Electronics, Software and Papers under these links:"
+    "open": "View publications"
   },
-
   "links": {
     "title": "Connect with us",
     "title2": "Find us on these platforms",
     "school": "School Website"
   },
-
   "sponsors": {
     "title": "Our Sponsors",
-    "text": "We would like to thank all our sponsors, without whom it would not be possible for us to participate in the Opens and build our robots.\n Special thanks goes to Celos and VDMA for their enorm contributions and the companies Multivac and Blech&Technik for their help with custom CNC Parts. \nIf you would like to support us, you can contact us here:",
+    "text": "Thank you to our sponsors for supporting our robots and competition participation. Contact us if you would like to support our teams.",
     "button": "Support us!"
   },
-
   "teams": {
     "title": "Our Teams",
     "awards": "Awards",
     "active": "Active Teams",
-    "inactive": "Former Teams",
-
-    "teamfaabs": "Founded in 2019, Team Faabs participated for the first time in the Soccer LightWeight league (now Soccer Infrared) in 2020. Their first success came in 2022 with the title of European Vice Champion in the Soccer LightWeight league. Since 2023 they are in the Soccer Open league (now Soccer Vision) and also won the World Open in 2023.",
-    "teamfaabs_go2026-st": "German Open 2026 - 1st place Superteam Soccer Vision",
-    "teamfaabs_go2026-tc": "German Open 2026 - Technical Challenge Soccer Vision",
-    "teamfaabs_go2026": "German Open 2026 - 3th place Soccer Vision",
-    "teamfaabs_vo2026": "South German Open 2026 - 1st place Soccer Vision",
-    "teamfaabs_wo2025": "World Open 2025 - 3th place Soccer Open",
-    "teamfaabs_wo2025-op": "World Open 2025 - OpenSource Award Soccer Open",
-    "teamfaabs_go2025": "German Open 2025 - 1st place Soccer Open",
-    "teamfaabs_go2025-tc": "German Open 2025 - Technical Challenge Soccer Open",
-    "teamfaabs_vo2025": "South German Open 2025 - 1st place Soccer Open",
-    "teamfaabs_go2024": "German Open 2024 - 1st place Soccer Open",
-    "teamfaabs_vo2024": "South Open 2024 - 1st place Soccer Open",
-    "teamfaabs_wo2023": "World Open 2023 - 1st place Soccer Open",
-    "teamfaabs_wo2023-da": "World Open 2023 - Outstanding Design Award Soccer Open",
-    "teamfaabs_go2023": "German Open 2023 - 2nd place Soccer Open",
-    "teamfaabs_go2023-st": "German Open 2023 - 1st place Superteam Soccer Open",
-    "teamfaabs_vo2023": "South German Open 2023 - 2nd place Soccer Open",
-    "teamfaabs_eo2022": "European Open 2022 - 2nd place Soccer LightWeight",
-    "teamfaabs_go2022": "German Open 2022 - 2nd place Soccer LightWeight",
-
-    "mathimazierer": "Founded in 2022, Team Mathimazierer participated for the first time in the Soccer LightWeight Entry league in 2023, where they got the title of Vice European Champion. In 2024 they moved to the Soccer LightWeight league (now Soccer Infrared) and got their second Vice European Champion title.",
-    "mathimazierer_go2026-st": "German Open 2026 - 1st place Superteam Soccer Infrared",
-    "mathimazierer_go2026": "German Open 2026 - 1nd place Soccer Infrared",
-    "mathimazierer_vo2026": "South German Open 2026 - 1st place Soccer Infrared",
-    "mathimazierer_wo2025": "World Open 2025 - 4th place Soccer Lightweight",
-    "mathimazierer_go2025": "German Open 2025 - 1st place Soccer Lightweight",
-    "mathimazierer_go2025-st": "German Open 2025 - 1st place Soccer Lightweight SuperTeam",
-    "mathimazierer_vo2025": "South German Open 2025 - 1st place Soccer Lightweight",
-    "mathimazierer_eo2024": "European Open 2024 - 3th place Soccer Lightweight",
-    "mathimazierer_go2024": "German Open 2024 - 3th place Soccer Lightweight",
-    "mathimazierer_vo2024": "South German Open 2024 - 3th place Soccer Lightweight",
-    "mathimazierer_eo2023": "European Open 2023 - 2nd place Soccer Lightweight Entry",
-    "mathimazierer_go2023": "German Open 2023 - 3th place Soccer Lightweight Entry",
-    "mathimazierer_vo2023": "South German Open 2023 - 2nd place Soccer Lightweight Entry",
-
-    "nuttellabroetchen": "The team Nuttellabroetchen was founded in 2022 and has been participating in the Onstage league since then and has already won several awards in this league.",
-    "nuttellabroetchen_wo2025": "World Open 2025 - 1st place OnStage",
-    "nuttellabroetchen_wo2025-st": "World Open 2025 - 1st place OnStage SuperTeam",
-    "nuttellabroetchen_wo2025-bp": "World Open 2025 - Best Poster OnStage",
-    "nuttellabroetchen_wo2025-bp2": "World Open 2025 - Best Performance OnStage",
-    "nuttellabroetchen_go2025": "German Open 2025 - 1st place OnStage",
-    "nuttellabroetchen_vo2025": "South German Open 2025 - 1st place OnStage",
-    "nuttellabroetchen_eo2024": "European Open 2024 - 2nd place OnStage",
-    "nuttellabroetchen_go2024": "German Open 2024 - 2nd place OnStage",
-    "nuttellabroetchen_vo2024": "South German Open 2024 - 1st place OnStage",
-    "nuttellabroetchen_go2023": "German Open 2023 - 3th place OnStage",
-    "nuttellabroetchen_vo2023": "South German Open 2023 - 1st place OnStage",
-    "nuttellabroetchen_go2022": "German Open 2022 - 3th place OnStage",
-
-    "robotronic": "The team Robotronic was founded in 2018 and participated for the first time in the Soccer Entry league in 2019. From 2020 to 2024, the team participated in the Soccer LightWeight league and made it to the World Open in 2023 and 2024.",
-    "robotronic_go2024": "German Open 2024 - 2nd place Soccer Lightweight",
-    "robotronic_vo2024": "South German Open 2024 - 1st place Soccer Lightweight",
-    "robotronic_wo2023-st": "World Open 2023 - 1st place Soccer Lightweight SuperTeam",
-    "robotronic_go2023": "German Open 2023 - 1st place Soccer Lightweight",
-    "robotronic_go2023-st": "German Open 2023 - 1st place Soccer Lightweight SuperTeam",
-    "robotronic_vo2023": "South German Open 2023 - 2nd place Soccer Lightweight",
-    "robotronic_vo2019": "South German Open 2019 - 3rd place Soccer Entry",
-
-    "robochip": "The team Robochip are going to be successors of team faabs, after they have their last year in 2026. To gather experience and prepare for the next season, they already participated in 2026 together with Team Faabs in the Soccer Vision League.",
-    "robochip_vo2026": "South German Open 2026 - 2nd place Soccer Vision",
-
-    "dsg": "The team 'Die Sauren Glühwurmchen' are our new Onstage Team, currently competing in the Onstage Entry category",
-    "dsg_go2026": "German Open 2026 - 2nd place OnStage Entry",
-    "dsg_vo2026": "South German Open 2026 - 1st place OnStage Entry",
-
-    "robochamps": "The team Robochamps is competing in the Rescue Line Entry Category for the 2026 season.",
-    "robochamps_vo2026": "South German Open 2026 - 1st place Rescue Line Entry"
+    "inactive": "Former Teams"
   },
-
   "partHistory": {
-    "title": "Participation History",
-    "go": "German Open",
-    "vo": "South German Open",
-    "wo": "World Open",
-    "eo": "European Open",
-    "nuremberg": "Nuremberg",
-    "brazil": "Brazil",
-    "cologne": "Cologne"
+    "title": "Participation History"
+  },
+  "content": {
+    "loading": "Loading…",
+    "loadError": "We could not load this content. Please try again.",
+    "notFound": "This content is not published or is no longer available.",
+    "empty": "No content has been published here yet.",
+    "retry": "Try again"
+  },
+  "gallery": {
+    "label": "Image gallery",
+    "previous": "Previous image",
+    "next": "Next image",
+    "pause": "Pause slideshow",
+    "play": "Play slideshow",
+    "unavailable": "This image is currently unavailable."
+  },
+  "video": {
+    "title": "YouTube video",
+    "load": "Load video",
+    "consent": "Loading this video connects to YouTube."
+  },
+  "contact": {
+    "name": "Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "sending": "Sending…",
+    "success": "Thank you! Your message has been sent.",
+    "invalid": "Please check your name, email, subject and message.",
+    "tooLarge": "Your message is too long. Please shorten it and try again.",
+    "rateLimit": "Too many attempts. Please try again in an hour.",
+    "unavailable": "The contact form is currently unavailable. Please contact us by email.",
+    "error": "Your message could not be sent. Please try again later."
+  },
+  "blog": {
+    "title": "News",
+    "readMore": "Read article",
+    "all": "All articles"
   }
 }

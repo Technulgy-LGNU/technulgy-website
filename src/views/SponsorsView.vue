@@ -1,166 +1,65 @@
 <script setup lang="ts">
-const sponsors = [
-  {
-    name: 'Celos',
-    logo: '/images/sponsors/celos.webp',
-    url: 'https://celos.de',
-  },
-  {
-    name: 'Multivac',
-    logo: '/images/sponsors/logo-multivac-blue.webp',
-    url: 'https://www.multivac.com/de/',
-  },
-  {
-    name: 'Blech & Technik',
-    logo: '/images/sponsors/bt_logo.webp',
-    url: 'https://www.blechundtechnik.de/',
-  },
-  {
-    name: 'Ulm Digital',
-    logo: '/images/sponsors/ulmdigital-2.webp',
-    url: 'https://ulm-digital.com/',
-  },
-  {
-    name: 'Wieland',
-    logo: '/images/sponsors/logo_wieland.webp',
-    url: 'https://www.wieland.com/de/',
-  },
-  {
-    name: 'Settele Spätzle',
-    logo: '/images/sponsors/settele.webp',
-    url: 'https://settele.de',
-  },
-  {
-    name: 'Hensoldt',
-    logo: '/images/sponsors/hensoldt.webp',
-    url: 'https://hensoldt.net',
-  },
-  {
-    name: 'Würth Elektronik',
-    logo: '/images/sponsors/wuerth.webp',
-    url: 'https://we-online.de',
-  },
-  {
-    name: 'VDMA',
-    logo: '/images/sponsors/vdma.webp',
-    url: 'https://vdma.eu',
-  },
-  {
-    name: 'ZwickRoll',
-    logo: '/images/sponsors/zwickroll.webp',
-    url: 'https://www.zwickroell.com/de/',
-  },
-  {
-    name: 'Maxon Motors',
-    logo: '/images/sponsors/maxonmoters.webp',
-    url: 'https://www.maxongroup.com/de-de',
-  },
-  {
-    name: 'Molex',
-    logo: '/images/sponsors/molex.webp',
-    url: 'https://www.molex.com/',
-  },
-  {
-    name: 'Ingenics Consulting',
-    logo: '/images/sponsors/ingenics_consulting.webp',
-    url: 'https://www.ingenics.com/de/',
-  },
-  {
-    name: 'Volksbank-Stiftung Ulm-Biberach',
-    logo: '/images/sponsors/volksbankstiftungulmbiberach.webp',
-    url: 'https://www.volksbank-ulm-biberach.de/startseite.html',
-  },
-  {
-    name: 'Sparkasse Neu-Ulm Illertissen',
-    logo: '/images/sponsors/sparkasseneuulm.webp',
-    url: 'https://www.sparkasse-neu-ulm-illertissen.de/de/home.html',
-  },
-  {
-    name: 'VDI',
-    logo: '/images/sponsors/vdi.webp',
-    url: 'https://vdi.de',
-  },
-  {
-    name: 'Mädler',
-    logo: '/images/sponsors/maedler.webp',
-    url: 'https://maedler.de',
-  },
-  {
-    name: 'Hoise und Span',
-    logo: '/images/sponsors/hoise_span.webp',
-    url: 'https://www.hoeise-span.de/',
-  },
-  {
-    name: 'Wefer 3D',
-    logo: '/images/sponsors/wefer3d.webp',
-    url: 'https://wefer3d.com',
-  },
-  {
-    name: 'Deloitte Innowake',
-    logo: '/images/sponsors/deloitteinnowake.webp',
-    url: 'https://career.deloitte-innowake.de/',
-  },
-  {
-    name: 'Utzin Utz',
-    logo: '/images/sponsors/utzinutz.webp',
-    url: 'https://deutzin-utz.com',
-  },
-  {
-    name: 'Bosch Rexroth',
-    logo: '/images/sponsors/boschrexroth.webp',
-    url: 'https://www.boschrexroth.com/de/de/',
-  },
-  {
-    name: 'VR-Bank Neu-Ulm',
-    logo: '/images/sponsors/vrbankneuulm.webp',
-    url: 'https://vrnu.de',
-  },
-  {
-    name: 'Multi CB',
-    logo: '/images/sponsors/multicb.webp',
-    url: 'https://www.multicb.com/',
-  },
-]
+import { useI18n } from 'vue-i18n'
+import { entryImages, httpsUrl, type Entry } from '@/api/website'
+import { useWebsiteContent } from '@/composables/useWebsiteContent'
+import ContentState from '@/components/ContentState.vue'
+import ImageCarousel from '@/components/ImageCarousel.vue'
+const { t } = useI18n()
+const { data: sponsors, loading, error, reload } = useWebsiteContent<Entry[]>('sponsors', true)
 </script>
 
 <template>
-  <!-- SPONSORS SECTION -->
   <section class="bg-gray-100 py-10 px-4 md:px-16">
     <div class="max-w-6xl mx-auto text-center">
-      <h2 class="text-2xl md:text-3xl font-semibold mb-6">{{ $t('sponsors.title') }}</h2>
-
-      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 items-center justify-center">
-        <a
+      <h1 class="text-2xl md:text-3xl font-semibold mb-6">{{ t('sponsors.title') }}</h1>
+      <ContentState
+        :loading="loading"
+        :error="error"
+        :empty="sponsors?.length === 0"
+        @retry="reload"
+      />
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 items-start">
+        <article
           v-for="sponsor in sponsors"
-          :key="sponsor.name"
-          :href="sponsor.url"
-          target="_blank"
-          rel="noopener"
-          class="flex items-center justify-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition"
+          :key="sponsor.id"
+          class="min-w-0 p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition"
         >
-          <img :src="sponsor.logo" :alt="sponsor.name" class="max-h-12 object-contain" />
-        </a>
+          <ImageCarousel
+            :images="entryImages(sponsor)"
+            :label="sponsor.name"
+            contain
+            class="h-20 mb-3"
+          />
+          <h2 class="font-semibold break-words">
+            <a
+              v-if="httpsUrl(sponsor.url)"
+              :href="httpsUrl(sponsor.url)"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:underline"
+              >{{ sponsor.name }}</a
+            ><span v-else>{{ sponsor.name }}</span>
+          </h2>
+          <p
+            v-if="sponsor.description"
+            class="mt-2 text-sm text-gray-600 whitespace-pre-line break-words"
+          >
+            {{ sponsor.description }}
+          </p>
+        </article>
       </div>
     </div>
   </section>
   <section class="bg-gray-50 py-10 px-4 md:px-16">
     <div class="max-w-6xl mx-auto text-center">
-      <!-- Appreciation Text -->
-      <p class="text-sm md:text-base text-gray-600 max-w-3xl mx-auto">
-        {{ $t('sponsors.text') }}
-      </p>
-
-      <!-- Contact Button -->
+      <p class="text-sm md:text-base text-gray-600 max-w-3xl mx-auto">{{ t('sponsors.text') }}</p>
       <div class="mt-6">
         <a
           class="bg-blue-600 text-white font-semibold py-2 px-4 rounded hover:bg-blue-700 transition"
           href="mailto:contact@technulgy.com"
+          >{{ t('sponsors.button') }}</a
         >
-          {{ $t('sponsors.button') }}
-        </a>
       </div>
     </div>
   </section>
 </template>
-
-<style scoped></style>

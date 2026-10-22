@@ -1,169 +1,61 @@
 # Technulgy Website
-The new Technulgy website, written in vuejs, getting data from the Technulgy Admin Software (T.A.S.).
 
-Hosted via docker swarm (1 Manager, 2 workers) and load balanced via traefik.
+Vue website using public content from the Technulgy Admin Software (TAS). The API contract is in [website-api.md](website-api.md).
 
-# Installation
-1. Clone the repository & Change to development branch
-```bash
-git clone https://github.com/technulgy-lgnu/technulgy-website.git
+## Development
 
-git checkout dev
-```
-
-2. Change directory to the project folder
-```bash
-cd technulgy-website
-```
-3. Install dependencies
-```bash
-npm install
-```
-
-4. Run the development server
-```bash
+```sh
+npm ci
+cp .env.example .env.local
 npm run dev
 ```
-Now open your browser and go to `http://localhost:5173` to see the website in action.
 
-# Commit changes
-1. Make your changes
-2. Add your changes to the staging area
-```bash
-git add .
-```
-3. Commit your changes
-```bash
-git commit -m "Your commit message"
-```
-4. Push your changes to the remote repository
-```bash
-git push origin dev
-```
-5. Create a pull request to merge your changes into the main branch
-6. Wait for the pull request to be reviewed and merged
+Open `http://localhost:5173`. Vite proxies `/website/*` to `http://localhost:2005` by default. Start TAS on that port, or change `TAS_PROXY_TARGET` in `.env.local`. Restart Vite after changing environment variables.
 
-# Development
+The browser uses the development proxy by default. To call a different API directly, set `VITE_TAS_BASE_URL` to its base URL, without `/website` (for example `https://tas.technulgy.com`). Direct cross-origin requests require the website origin in TAS's `website.allowed_origins`.
 
-## Project Structure
-```bash
-technulgy-website
-├── public
-│   ├── favicon.ico
-│   ├── images/
-├── src
-│   ├── assets/
-│   ├── components/
-│   ├── locales/
-│   ├── plugins/
-│   ├── router/
-│   ├── views/
-│   ├── App.vue
-│   ├── main.ts
+No admin credentials or API keys belong in this repository. Public requests omit cookies and bypass the browser content cache.
+
+## Content management
+
+Publish content in TAS to update the website:
+
+- **Home:** ordered slideshow images, About us, videos, and contact availability. The latest three published articles appear automatically.
+- **Teams:** active/retired teams, descriptions, galleries, selected start image, and competition results.
+- **Events:** participation history, event galleries, and the results entered on teams.
+- **Sponsors:** names, descriptions, galleries, and optional HTTPS links.
+- **Publications:** categories, descriptions, galleries, and optional HTTPS links.
+- **Blog:** article summaries and detail pages at `/blog/{slug}?lang=de` or `?lang=en`. Detail pages render heading, Markdown, image, gallery, and video blocks.
+
+All collection pages fetch subsequent API pages. German/English switching fetches fresh translated content. Missing, unpublished, empty, and failed responses display localized states; failed loads can be retried. Content refreshes on navigation, reload, and language changes, without a site rebuild.
+
+Images have small previous/next arrows when there is more than one. Only homepage galleries advance automatically (every five seconds). Autoplay pauses on hover, keyboard focus, a hidden browser tab, or the pause button, and respects reduced-motion preferences. Team galleries begin with the selected start image. Videos connect to YouTube only after the visitor clicks to load them.
+
+The contact form follows Home's `contact.enabled` setting. Configure SMTP in TAS to enable it. The form sends name, email, subject, message, and an empty honeypot; success requires HTTP 202 with `sent: true`.
+
+Interface labels live in `src/locales`. Published descriptions, images, results, articles, and About us come from TAS. Links and legal pages remain website-maintained because the public API has no resources for them. SSL is also website-maintained; no editable SSL resource is introduced.
+
+## Production
+
+```sh
+npm run build
+npm run preview
 ```
 
-Im Public Ordner könnt ihr Bilder ablegen, die ihr auf der Website verwenden wollt.
-Bitte haltet die Struktur sauber und benennt die Bilder sinnvoll.
+Production builds default to `https://tas.technulgy.com`. Override it with `VITE_TAS_BASE_URL` at build time. TAS must allow the exact public website origin in `website.allowed_origins`. Set TAS's `website.public_url` to the website origin so article links point here.
 
-Um Inhalte zu ändern musst ihr die einzelnen Vue Dateien in den Views Ordnern anpassen.
-Da wir die Website auf Deutsch und auf Englisch anbieten, müsst ihr die die Texte für
-beide Sprachen in dem `locales` Ordner anpassen.
-
-## Locales
-In dem `locales` Ordner findet Ihr die Sprachdateien für die Website.
-Die Dateien sind in JSON Format und enthalten die Texte für die jeweilige Sprache.
-Die Struktur der Dateien ist wie folgt:
-```json
-{
-  "key": "value",
-  "key2": {
-    "key3": "value3"
-  }
-}
+```sh
+docker build --build-arg VITE_TAS_BASE_URL=https://tas.technulgy.com -t technulgy-website .
 ```
 
-Es ist bereits eine englische und eine deutsche Sprachdatei vorhanden.
-Die englische Sprachdatei ist `en.json` und die deutsche Sprachdatei ist `de.json`.
-Die Texte sind in den Dateien in der Form `key: value` gespeichert.
-Die Keys sind die Bezeichner für die Texte und die Values sind die Texte selbst.
-Die Keys sind in der Form `key.key2.key3` gespeichert.
-Die Keys sind hierarchisch aufgebaut und können beliebig tief verschachtelt werden.
+The Docker image includes an nginx SPA fallback so direct article and other page URLs work. If hosting elsewhere, rewrite non-file paths to `/index.html`. Old `/#/...` bookmarks are upgraded to the corresponding path. Production environment variables are compiled into the bundle; changing the API base requires rebuilding the image.
 
-Um die Texte in den Vue Dateien zu verwenden, müsst ihr die Keys in den Dateien verwenden.
-Die Keys sind in der Form `t('key.key2.key3')` gespeichert.
+## Checks
 
-Die Funktion `t` ist eine Funktion, die die Texte aus den Sprachdateien lädt und die Texte in der richtigen Sprache anzeigt.
-
-## Views bearbeiten
-In dem `views` Ordner findet Ihr die Vue Dateien für die einzelnen Seiten der Website.
-Die Dateien sind in der Form `Name.vue` gespeichert.
-In der HomeView könnt ihr die Bilder für die SlideShow anpassen und die key values
-und Bilder für die beiden Sektionen darunter anpassen.
-
-In der Participation `ParticipationHistoryView.vue` und in der `TeamsView.vue` ist
-ganz oben ein Array, in das Ihr weitere Teams und deren Erfolge einfügen könnt.
-Bitte denkt daran, dass Ihr immer mit den Übersetzungen arbeitet.
-
-Syntax `TeamsView.vue`
-```javascript
-const teams = [
-  {
-    name: "Team Name",
-    description: "Team Beschreibung",
-    image: "team.png",
-    achievements: [
-      {
-        year: 2023,
-        title: "Titel",
-        description: "Beschreibung"
-      }
-    ]
-  }
-]
-```
-Syntax `ParticipationHistoryView.vue`
-```javascript
-const history = computed(() => [
-    {
-      name: "NameDesEvents",
-      year: 2023,
-      location: "Ort",
-      awards: [
-        { team: "Team Name", award: "Award Name" },
-        { team: "Team Name", award: "Award Name" }
-      ],
-      images: [
-        '/images/year/event1.png',
-        ...
-      ]
-    }
-])
+```sh
+npm test
+npm run build
+npm exec oxlint -- . -D correctness --ignore-path .gitignore
 ```
 
-Es gibt bereits locale für die einzelnen Events und für die awards könnt ihr die von
-den Teams wiederverwenden.
-
-```json
-{
-    # German Names
-    "partHistory": {
-        "title": "Erfolgsgeschichte",
-        "go": "Deutsche Meisterschaft",
-        "vo": "Süddeutsche Meisterschaft",
-        "wo": "Weltmeisterschaft",
-        "eo": "Europäische Meisterschaft",
-        "nuremberg": "Nürnberg"
-    }
-    # English Names
-    "partHistory": {
-        "title": "Participation History",
-        "go": "German Open",
-        "vo": "South German Open",
-        "wo": "World Open",
-        "eo": "European Open",
-        "nuremberg": "Nuremberg"
-    }
-}
-```
-
-Bei Fragen kontaktiert mich gerne: [braunelias@technulgy.com](mailto:braunelias@technulgy.com)
+Tests cover pagination, language request races, unavailable content, gallery navigation/autoplay, Markdown safety, video consent, and contact submission outcomes. They mock the public API and do not send email.

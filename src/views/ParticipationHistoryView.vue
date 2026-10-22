@@ -1,158 +1,60 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
-import { computed } from 'vue'
+import { entryImages, type Competition } from '@/api/website'
+import { useWebsiteContent } from '@/composables/useWebsiteContent'
+import ContentState from '@/components/ContentState.vue'
+import ImageCarousel from '@/components/ImageCarousel.vue'
 const { t } = useI18n()
-
-const history = computed(() => [
-  {
-    name: t('partHistory.go'),
-    year: 2026,
-    location: t('partHistory.cologne'),
-    awards: [
-      { team: 'Team Faabs', title: t('teams.teamfaabs_go2026') },
-      { team: 'Team Faabs', title: t('teams.teamfaabs_go2026-st') },
-      { team: 'Team Faabs', title: t('teams.teamfaabs_go2026-tc') },
-      { team: 'Team Mathimazierer', title: t('teams.mathimazierer_go2026') },
-      { team: 'Team Mathimazierer', title: t('teams.mathimazierer_go2026-st') },
-      { team: 'Die Sauren  Glühwurmchen', title: t('teams.dsg_go2026') },
-    ],
-    images: [
-      '/images/2026/2026-go-picture-kast01.webp',
-      '/images/2026/2026-go-picture-kast02.webp',
-      '/images/2026/2026-go-picture-gord01.webp',
-
-    ],
-  },
-  {
-    name: t('partHistory.vo'),
-    year: 2026,
-    location: 'Vöhringen',
-    awards: [
-      { team: 'Team Faabs', title: t('teams.teamfaabs_vo2026') },
-      { team: 'Team Mathimazierer', title: t('teams.mathimazierer_vo2026') },
-      { team: 'Die Sauren  Glühwurmchen', title: t('teams.dsg_vo2026') },
-      { team: 'Robochamps', title: t('teams.robochamps_vo2026') },
-    ],
-    images: [
-      '/images/2026/2026-vo-lgnuall.webp',
-      '/images/2026/2026-vo-picture-006.webp',
-      '/images/2026/2026-vo-picture-021.webp',
-    ],
-  },
-  {
-    name: t('partHistory.wo'),
-    year: 2025,
-    location: t('partHistory.brazil'),
-    awards: [
-      { team: 'Team Faabs', title: t('teams.teamfaabs_wo2025') },
-      { team: 'Team Faabs', title: t('teams.teamfaabs_wo2025-op') },
-      { team: 'Team Mathimazierer', title: t('teams.mathimazierer_wo2025') },
-      { team: 'Team Nuttellabroetchen', title: t('teams.nuttellabroetchen_wo2025') },
-      { team: 'Team Nuttellabroetchen', title: t('teams.nuttellabroetchen_wo2025-st') },
-      { team: 'Team Nuttellabroetchen', title: t('teams.nuttellabroetchen_wo2025-bp') },
-      { team: 'Team Nuttellabroetchen', title: t('teams.nuttellabroetchen_wo2025-bp2') },
-    ],
-    images: [
-      '/images/2025/2025-wo-onstage.webp',
-      '/images/2025/2025-wo-teamfaabs.webp',
-      '/images/2025/2025-wo-teamfaabs_robot.webp',
-    ],
-  },
-  {
-    name: t('partHistory.go'),
-    year: 2025,
-    location: t('partHistory.nuremberg'),
-    awards: [
-      { team: 'Team Faabs', title: t('teams.teamfaabs_go2025') },
-      { team: 'Team Faabs', title: t('teams.teamfaabs_go2025-tc') },
-      { team: 'Team Mathimazierer', title: t('teams.mathimazierer_go2025') },
-      { team: 'Team Nuttellabroetchen', title: t('teams.nuttellabroetchen_go2025') },
-    ],
-    images: [
-      '/images/2025/2025-go-picture-100.webp',
-      '/images/2025/2025-go-picture-002.webp',
-      '/images/2025/2025-go-picture-036.webp',
-    ],
-  },
-  {
-    name: t('partHistory.vo'),
-    year: 2025,
-    location: 'Vöhringen',
-    awards: [
-      { team: 'Team Faabs', title: t('teams.teamfaabs_vo2025') },
-      { team: 'Team Mathimazierer', title: t('teams.mathimazierer_vo2025') },
-      { team: 'Team Nuttellabroetchen', title: t('teams.nuttellabroetchen_vo2025') },
-    ],
-    images: [
-      '/images/2025/2025-vo-picture-42.webp',
-      '/images/2025/2025-vo-picture-05.webp',
-      '/images/2025/2025-vo-picture-06.webp',
-    ],
-  },
-  {
-    name: t('partHistory.wo'),
-    year: 2023,
-    location: 'Bordeaux (France)',
-    awards: [
-      { team: 'Team Faabs', title: t('teams.teamfaabs_wo2023') },
-      { team: 'Team Faabs', title: t('teams.teamfaabs_wo2023-ad') },
-      { team: 'Team Robotronic', title: t('teams.robotronic_wo2023-st') },
-    ],
-    images: [
-      '/images/2023/LGNU-WorldOpen.webp',
-      '/images/2023/RoboCupBordeaux-Logo.jpeg',
-      '/images/2023/RoboCup-WM.webp',
-    ],
-  },
-])
+const {
+  data: events,
+  loading,
+  error,
+  reload,
+} = useWebsiteContent<Competition[]>('participation-history', true)
 </script>
 
 <template>
   <section class="bg-white py-12 px-4 md:px-16 text-gray-800">
     <div class="max-w-6xl mx-auto">
       <h1 class="text-3xl md:text-4xl font-bold text-center mb-10">{{ t('partHistory.title') }}</h1>
-
+      <ContentState
+        :loading="loading"
+        :error="error"
+        :empty="events?.length === 0"
+        @retry="reload"
+      />
       <div class="space-y-10">
-        <div
-          v-for="event in history"
-          :key="event.name"
+        <article
+          v-for="event in events"
+          :key="event.id"
           class="border rounded-xl shadow-sm hover:shadow-md transition p-6"
         >
           <div class="mb-4">
             <h2 class="text-xl font-semibold">
               {{ event.name }} <span class="text-gray-500">({{ event.year }})</span>
             </h2>
-            <p class="text-sm text-gray-600">{{ event.location }}</p>
+            <p class="text-sm text-gray-600 whitespace-pre-line">{{ event.description }}</p>
           </div>
-
-          <!-- AWARDS -->
-          <div class="mb-4">
+          <div v-if="event.results.length" class="mb-4">
             <h3 class="font-medium mb-1">{{ t('teams.awards') }}:</h3>
             <ul class="list-disc list-inside text-sm text-gray-700">
-              <li v-for="award in event.awards" :key="award.team" class="mb-1">
-                <strong>{{ award.team }}</strong
-                >: {{ award.title }}
+              <li
+                v-for="(result, index) in event.results"
+                :key="`${result.teamId}-${index}`"
+                class="mb-1"
+              >
+                <strong>{{ result.team }}</strong
+                >: {{ result.league }} — {{ result.result }}
               </li>
             </ul>
           </div>
-
-          <!-- IMAGES -->
-          <div
-            v-if="event.images && event.images.length"
-            class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4"
-          >
-            <img
-              v-for="(img, index) in event.images"
-              :key="index"
-              :src="img"
-              alt="Event image"
-              class="rounded-lg shadow object-cover h-75 w-full"
-            />
-          </div>
-        </div>
+          <ImageCarousel
+            :images="entryImages(event)"
+            :label="event.name"
+            class="aspect-video max-h-[32rem] shadow"
+          />
+        </article>
       </div>
     </div>
   </section>
 </template>
-
-<style scoped></style>
